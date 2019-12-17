@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>心谭博客 - 前端算法</title>
+    <link>http://xxoo521.com/</link>
+    
+    <image>
+      <url>http://xxoo521.com/images/logo.svg</url>
+      <title>心谭博客 - 前端算法</title>
+      <link>http://xxoo521.com/</link>
+    </image>
+    
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
+    <pubDate>Tue, 17 Dec 2019 07:12:48 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>如何保持保持高效学习？</title>
+      <link>http://xxoo521.com/2019-11-25-how-insist-on-learning-123/</link>
+      <guid>http://xxoo521.com/2019-11-25-how-insist-on-learning-123/</guid>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这是我最近特别想记录的心得，关于「如何保持高效学习」。&lt;/p&gt;
+&lt;p&gt;在从公司离职后回校作毕业设计的很长一段时间内，我都在不停地滑水。所谓学习 1 小时，摸鱼 2 小时。除了坚持每周三次的健身，自己给自己制定的学习任务，双 11 囤下来书，都是进展缓慢。&lt;/p&gt;
+&lt;p&gt;不像在公司那样，周围同事都很努力，到处弥漫着积极上进的氛围。学校里面大多数时间是自己独自一人在搞事情，没有监督，没有比较，自然严重缺乏动力。&lt;/p&gt;
+&lt;p&gt;所以，我意识到确实是要作出一些改变了。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-11-25-how-insist-on-learning-123/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>如何保持保持高效学习123？</title>
+      <link>http://xxoo521.com/2019-11-25-how-insist-on-learning/</link>
+      <guid>http://xxoo521.com/2019-11-25-how-insist-on-learning/</guid>
+      <pubDate>Sun, 24 Nov 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这是我最近特别想记录的心得，关于「如何保持高效学习」。&lt;/p&gt;
+&lt;p&gt;在从公司离职后回校作毕业设计的很长一段时间内，我都在不停地滑水。所谓学习 1 小时，摸鱼 2 小时。除了坚持每周三次的健身，自己给自己制定的学习任务，双 11 囤下来书，都是进展缓慢。&lt;/p&gt;
+&lt;p&gt;不像在公司那样，周围同事都很努力，到处弥漫着积极上进的氛围。学校里面大多数时间是自己独自一人在搞事情，没有监督，没有比较，自然严重缺乏动力。&lt;/p&gt;
+&lt;p&gt;所以，我意识到确实是要作出一些改变了。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-11-25-how-insist-on-learning/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
