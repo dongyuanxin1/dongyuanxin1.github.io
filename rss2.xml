@@ -15,8 +15,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Thu, 19 Dec 2019 06:52:23 GMT</pubDate>
+    <pubDate>Fri, 20 Dec 2019 08:07:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>高效交流，欢迎进群</title>
+      <link>http://xxoo521.com/2019-12-20-contact/</link>
+      <guid>http://xxoo521.com/2019-12-20-contact/</guid>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;想不明白的问题，别人的几句话就可能点醒。而一个人坚持学习难免开小差，共同交流才更有氛围。&lt;/p&gt;
+&lt;p&gt;在这里，不仅仅能提升前端工程/算法设计能力，还能遇到更多小伙伴。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-20-contact/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>🔝2020，让我们从头来过</title>
