@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xxoo521.com/"/>
-  <updated>2019-12-20T08:07:24.855Z</updated>
+  <updated>2019-12-21T15:06:00.024Z</updated>
   <id>http://xxoo521.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指offer - 重建二叉树 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-21-re-construct-btree/"/>
+    <id>http://xxoo521.com/2019-12-21-re-construct-btree/</id>
+    <published>2019-12-21T00:00:00.000Z</published>
+    <updated>2019-12-21T15:06:00.024Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列&lt;code&gt;{1,2,4,7,3,5,6,8}&lt;/code&gt;和中序遍历序列&lt;code&gt;{4,7,2,1,5,3,8,6}&lt;/code&gt;，则重建二叉树并返回。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="树" scheme="http://xxoo521.com/tags/%E6%A0%91/"/>
+    
+      <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-21-da-yin-lian-biao/"/>
+    <id>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</id>
+    <published>2019-12-21T00:00:00.000Z</published>
+    <updated>2019-12-21T15:08:12.715Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>高效交流，欢迎进群</title>
@@ -87,7 +133,7 @@
     <link href="http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/"/>
     <id>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</id>
     <published>2019-12-19T00:00:00.000Z</published>
-    <updated>2019-12-20T03:26:18.752Z</updated>
+    <updated>2019-12-21T15:04:04.572Z</updated>
     
     <summary type="html">
     

@@ -7,18 +7,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>归档 - 心谭博客 - 前端算法</title>
+<title>剑指offer - 从尾到头打印链表 - JavaScript - 心谭博客 - 前端算法</title>
 
 
-    <meta name="description" content="专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题">
-<meta property="og:type" content="website">
-<meta property="og:title" content="心谭博客 - 前端算法">
-<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;archives&#x2F;index.html">
+    <meta name="description" content="题目描述：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="剑指offer - 从尾到头打印链表 - JavaScript">
+<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;2019-12-21-da-yin-lian-biao&#x2F;index.html">
 <meta property="og:site_name" content="心谭博客 - 前端算法">
-<meta property="og:description" content="专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题">
+<meta property="og:description" content="题目描述：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
+<meta property="article:published_time" content="2019-12-21T00:00:00.000Z">
+<meta property="article:modified_time" content="2019-12-21T15:08:12.715Z">
 <meta property="article:author" content="心谭">
+<meta property="article:tag" content="链表">
+<meta property="article:tag" content="栈">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
 
@@ -96,7 +100,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="心谭博客 - 前端算法" height="28">
+                <img src="/images/logo.svg" alt="剑指offer - 从尾到头打印链表 - JavaScript" height="28">
             
             </a>
         </div>
@@ -110,7 +114,7 @@ var _hmt = _hmt || [];
                 <a class="navbar-item"
                 href="/2019-12-20-contact/">加群交流</a>
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/archives">历史归档</a>
                 
                 <a class="navbar-item"
@@ -149,152 +153,173 @@ var _hmt = _hmt || [];
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
         
-<div class="card widget">
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-12-21T00:00:00.000Z">2019-12-21</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 319 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                剑指offer - 从尾到头打印链表 - JavaScript
+            
+        </h1>
+        <div class="content">
+            <p><strong>题目描述</strong>：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。</p>
+<a id="more"></a>
+
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。</p>
+<h2 id="解法-1-栈"><a href="#解法-1-栈" class="headerlink" title="解法 1: 栈"></a>解法 1: 栈</h2><p>题目要求的是<strong>从尾到头</strong>。这种“后进先出”的访问顺序，自然想到了用栈。</p>
+<p>时间复杂度 O(N)，空间复杂度 O(N)。</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/d0267f7f55b3412ba93bd35cfa8e8035</span></span><br><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-20-da-yin-lian-biao/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/*function ListNode(x)&#123;</span></span><br><span class="line"><span class="hljs-comment">    this.val = x;</span></span><br><span class="line"><span class="hljs-comment">    this.next = null;</span></span><br><span class="line"><span class="hljs-comment">&#125;*/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;ListNode&#125;</span> <span class="hljs-variable">head</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;any[]&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printListFromTailToHead</span>(<span class="hljs-params">head</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> stack = [];</span><br><span class="line">    <span class="hljs-keyword">let</span> node = head;</span><br><span class="line">    <span class="hljs-keyword">while</span> (node) &#123;</span><br><span class="line">        stack.push(node.val);</span><br><span class="line">        node = node.next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> reverse = [];</span><br><span class="line">    <span class="hljs-keyword">while</span> (stack.length) &#123;</span><br><span class="line">        reverse.push(stack.pop());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>专注前端与算法的系列干货分享，欢迎关注(¬‿¬)：<br>「微信公众号：<strong>心谭博客</strong>」| <a href="https://xxoo521.com/">xxoo521.com</a> | <a href="https://github.com/dongyuanxin/blog" target="_blank" rel="noopener">GitHub</a></p>
+</blockquote>
+<p>发现后半段出栈的逻辑，其实就是将数组<code>reverse</code>反转。因此，借助 javascript 的 api，更优雅的写法如下：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/d0267f7f55b3412ba93bd35cfa8e8035</span></span><br><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-20-da-yin-lian-biao/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;ListNode&#125;</span> <span class="hljs-variable">head</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;any[]&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">printListFromTailToHead</span>(<span class="hljs-params">head</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> stack = [];</span><br><span class="line">    <span class="hljs-keyword">let</span> node = head;</span><br><span class="line">    <span class="hljs-keyword">while</span> (node) &#123;</span><br><span class="line">        stack.push(node.val);</span><br><span class="line">        node = node.next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> stack.reverse();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+            
+                <div class="buttons is-centered">
+                    <img src="/images/wechat-bar.png" alt="" srcset="">
+                </div>
+                <h3 style="color: #7a7a7a; font-size: 0.75em;" class="menu-label has-text-centered">扫码关注「心谭博客」, 专注前端与算法</h3>
+                <h3 style="color: #7a7a7a; font-size: 0.75em;" class="menu-label has-text-centered">目前已有前端面试、剑指Offer·JS、动画设计、Webpack等系列专题</h3>
+            
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/%E6%A0%88/" rel="tag">栈</a>, <a class="has-link-grey -link" href="/tags/%E9%93%BE%E8%A1%A8/" rel="tag">链表</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
+        <h3 class="menu-label has-text-centered">扫码加入 前端&amp;算法 交流群</h3>
+        <div class="buttons is-centered">
+            
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-21T00:00:00.000Z">2019-12-21</time>
-                        <a href="/2019-12-21-re-construct-btree/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 重建二叉树 - JavaScript</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-qq"></i>
+    </span>
+    <span>QQ群</span>
+    <div class="qrcode">
+        <img src="/images/qq-qun.png" alt="QQ群" />
+    </div>
+</a>
+
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-21T00:00:00.000Z">2019-12-21</time>
-                        <a href="/2019-12-21-da-yin-lian-biao/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 从尾到头打印链表 - JavaScript</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-20T00:00:00.000Z">2019-12-20</time>
-                        <a href="/2019-12-20-contact/" class="title has-link-black-ter is-size-6 has-text-weight-normal">高效交流，欢迎进群</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E6%83%B3%E6%B3%95/">想法</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信群</span>
+    <div class="qrcode"><img src="/images/wechat-qun.png" alt="微信群"></div>
+</a>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-19T00:00:00.000Z">2019-12-19</time>
-                        <a href="/2019-12-19-let-us-restart/" class="title has-link-black-ter is-size-6 has-text-weight-normal">🔝2020，让我们从头来过</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E6%83%B3%E6%B3%95/">想法</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-19T00:00:00.000Z">2019-12-19</time>
-                        <a href="/2019-12-19-ti-huan-kong-ge/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 替换空格 - JavaScript</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-12-19T00:00:00.000Z">2019-12-19</time>
-                        <a href="/2019-12-19-er-wei-shu-zu-cha-zhao/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 二维数组中的查找 - JavaScript</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-11-25T00:00:00.000Z">2019-11-25</time>
-                        <a href="/2019-11-25-how-insist-on-learning/" class="title has-link-black-ter is-size-6 has-text-weight-normal">如何保持保持高效学习？</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/%E6%83%B3%E6%B3%95/">想法</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
         </div>
     </div>
 </div>
 
-    
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019-12-21-re-construct-btree/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">剑指offer - 重建二叉树 - JavaScript</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019-12-20-contact/">
+                <span class="level-item">高效交流，欢迎进群</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    // custom: dongyuanxin
+    function extractPermalink(pathname = '', _default = window.location.pathname) {
+        if (!pathname.length) {
+            return _default;
+        }
+
+        const strs = pathname.split('/')
+        const len = strs.length
+        for (let i = len - 1; i >= 0; i--) {
+            if (strs[i].length) {
+                return strs[i];
+            }
+        }
+        return _default;
+    }
+
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '2aO1R3CUMBzx0MQSAp9AfgfS-gzGzoHsz',
+        app_key: 'VouQCPlbpSd5tKlIls5R823t',
+        placeholder: '关注公众号「心谭博客」，进一步互动交流',
+        path: extractPermalink(window.location.pathname)
+    });
+</script>
+
+    </div>
+</div>
 </div>
                 
 
@@ -452,6 +477,26 @@ var _hmt = _hmt || [];
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#题目描述">
+        <span class="has-mr-6">1</span>
+        <span>题目描述</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-1-栈">
+        <span class="has-mr-6">2</span>
+        <span>解法 1: 栈</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
         
             <div class="card widget">
     <div class="card-content">
@@ -661,6 +706,26 @@ var _hmt = _hmt || [];
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#题目描述">
+        <span class="has-mr-6">1</span>
+        <span>题目描述</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-1-栈">
+        <span class="has-mr-6">2</span>
+        <span>解法 1: 栈</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
