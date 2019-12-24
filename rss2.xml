@@ -15,8 +15,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Sun, 22 Dec 2019 03:17:45 GMT</pubDate>
+    <pubDate>Tue, 24 Dec 2019 16:53:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>剑指offer - 用两个栈实现队列 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-23-zhan-shi-xian-dui-lie/</link>
+      <guid>http://xxoo521.com/2019-12-23-zhan-shi-xian-dui-lie/</guid>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：用两个栈来实现一个队列，完成队列的 Push 和 Pop 操作。 队列中的元素为 int 类型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;拓展思考：如何用两个队列实现一个栈&lt;/strong&gt;？&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-23-zhan-shi-xian-dui-lie/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>剑指offer - 从尾到头打印链表 - JavaScript</title>

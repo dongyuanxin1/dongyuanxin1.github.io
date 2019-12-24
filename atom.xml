@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xxoo521.com/"/>
-  <updated>2019-12-22T03:17:45.592Z</updated>
+  <updated>2019-12-24T16:53:39.274Z</updated>
   <id>http://xxoo521.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指offer - 用两个栈实现队列 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-23-zhan-shi-xian-dui-lie/"/>
+    <id>http://xxoo521.com/2019-12-23-zhan-shi-xian-dui-lie/</id>
+    <published>2019-12-23T00:00:00.000Z</published>
+    <updated>2019-12-24T16:53:39.274Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：用两个栈来实现一个队列，完成队列的 Push 和 Pop 操作。 队列中的元素为 int 类型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;拓展思考：如何用两个队列实现一个栈&lt;/strong&gt;？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
+    
+      <category term="队列" scheme="http://xxoo521.com/tags/%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
