@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xxoo521.com/"/>
-  <updated>2019-12-21T15:06:00.024Z</updated>
+  <updated>2019-12-22T03:17:45.592Z</updated>
   <id>http://xxoo521.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-21-da-yin-lian-biao/"/>
+    <id>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</id>
+    <published>2019-12-21T00:00:00.000Z</published>
+    <updated>2019-12-22T03:17:45.592Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指offer - 重建二叉树 - JavaScript</title>
@@ -36,29 +59,6 @@
       <category term="树" scheme="http://xxoo521.com/tags/%E6%A0%91/"/>
     
       <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
-    <link href="http://xxoo521.com/2019-12-21-da-yin-lian-biao/"/>
-    <id>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</id>
-    <published>2019-12-21T00:00:00.000Z</published>
-    <updated>2019-12-21T15:08:12.715Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
     
   </entry>
   
