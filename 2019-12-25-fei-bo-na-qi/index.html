@@ -7,22 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>剑指offer - 二维数组中的查找 - JavaScript - 心谭博客 - 前端算法</title>
+<title>剑指offer - 斐波那契数列 - JavaScript - 心谭博客 - 前端算法</title>
 
 
-    <meta name="description" content="题目描述：在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+    <meta name="description" content="题目描述：大家都知道斐波那契数列，现在要求输入一个整数 n，请你输出斐波那契数列的第 n 项（从 0 开始，第 0 项为 0）。n&lt;&#x3D;39。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指offer - 二维数组中的查找 - JavaScript">
-<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;2019-12-19-er-wei-shu-zu-cha-zhao&#x2F;index.html">
+<meta property="og:title" content="剑指offer - 斐波那契数列 - JavaScript">
+<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;2019-12-25-fei-bo-na-qi&#x2F;index.html">
 <meta property="og:site_name" content="心谭博客 - 前端算法">
-<meta property="og:description" content="题目描述：在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+<meta property="og:description" content="题目描述：大家都知道斐波那契数列，现在要求输入一个整数 n，请你输出斐波那契数列的第 n 项（从 0 开始，第 0 项为 0）。n&lt;&#x3D;39。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
-<meta property="article:published_time" content="2019-12-19T00:00:00.000Z">
-<meta property="article:modified_time" content="2019-12-29T14:06:21.674Z">
+<meta property="article:published_time" content="2019-12-25T00:00:00.000Z">
+<meta property="article:modified_time" content="2019-12-29T14:26:06.836Z">
 <meta property="article:author" content="心谭">
-<meta property="article:tag" content="数组">
-<meta property="article:tag" content="查找">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="动态规划">
+<meta property="article:tag" content="备忘录">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
 
@@ -116,7 +117,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="剑指offer - 二维数组中的查找 - JavaScript" height="28">
+                <img src="/images/logo.svg" alt="剑指offer - 斐波那契数列 - JavaScript" height="28">
             
             </a>
         </div>
@@ -175,7 +176,7 @@ var _hmt = _hmt || [];
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-19T00:00:00.000Z">2019-12-19</time>
+                <time class="level-item has-text-grey" datetime="2019-12-25T00:00:00.000Z">2019-12-25</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
@@ -185,7 +186,7 @@ var _hmt = _hmt || [];
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 646 个字)
+                    4 分钟 读完 (大约 656 个字)
                 </span>
                 
                 
@@ -199,35 +200,35 @@ var _hmt = _hmt || [];
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                剑指offer - 二维数组中的查找 - JavaScript
+                剑指offer - 斐波那契数列 - JavaScript
             
         </h1>
         <div class="content">
-            <p><strong>题目描述</strong>：在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
+            <p><strong>题目描述</strong>：大家都知道斐波那契数列，现在要求输入一个整数 n，请你输出斐波那契数列的第 n 项（从 0 开始，第 0 项为 0）。n&lt;=39。</p>
 <a id="more"></a>
 
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
-<h2 id="解法-1：暴力法"><a href="#解法-1：暴力法" class="headerlink" title="解法 1：暴力法"></a>解法 1：暴力法</h2><p>遍历数组中的所有元素，找到是否存在。</p>
-<p>时间复杂度是 O(N^2)，空间复杂度是 O(1)</p>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e</span></span><br><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> *</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">target</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number[][]&#125;</span> <span class="hljs-variable">array</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Find</span>(<span class="hljs-params">target, array</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> rowNum = array.length;</span><br><span class="line">    <span class="hljs-keyword">if</span> (!rowNum) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">const</span> colNum = array[<span class="hljs-number">0</span>].length;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; rowNum; i++) &#123;</span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; colNum; j++) &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span> (array[i][j] === target) <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>大家都知道斐波那契数列，现在要求输入一个整数 n，请你输出斐波那契数列的第 n 项（从 0 开始，第 0 项为 0）。n&lt;=39。</p>
+<h2 id="解法-1-数学定义"><a href="#解法-1-数学定义" class="headerlink" title="解法 1: 数学定义"></a>解法 1: 数学定义</h2><p>根据数学定义：<code>f(n) = f(n - 1) + f(n - 2)</code>。最初始情况是<code>f(0) = 0</code>和<code>f(1) = 1</code>。</p>
+<p>因此直接循环更新即可。时间复杂度 O(N)，空间复杂度 O(1)。</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-25-fei-bo-na-qi/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">n</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Fibonacci</span>(<span class="hljs-params">n</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (n === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (n === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">let</span> a = <span class="hljs-number">0</span>,</span><br><span class="line">        b = <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        <span class="hljs-keyword">let</span> c = a + b;</span><br><span class="line">        a = b;</span><br><span class="line">        b = c;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>专注前端与算法的系列干货分享，欢迎关注(¬‿¬)：<br>「微信公众号：<strong>心谭博客</strong>」| <a href="https://xxoo521.com/">xxoo521.com</a> | <a href="https://github.com/dongyuanxin/blog" target="_blank" rel="noopener">GitHub</a></p>
-</blockquote>
-<h2 id="解法-2：观察数组规律"><a href="#解法-2：观察数组规律" class="headerlink" title="解法 2：观察数组规律"></a>解法 2：观察数组规律</h2><p>按照题目要求，数组的特点是：<strong>每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序</strong>。考虑以下数组：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 2 3</span><br><span class="line">4 5 6</span><br><span class="line">7 8 9</span><br></pre></td></tr></table></figure>
-
-<p>在其中寻找 5 是否存在。过程如下：</p>
+<h2 id="解法-2-递归-动态规划"><a href="#解法-2-递归-动态规划" class="headerlink" title="解法 2: 递归 + 动态规划"></a>解法 2: 递归 + 动态规划</h2><p>根据数学定义：<code>f(n) = f(n - 1) + f(n - 2)</code>，代码可以实现为递归形式。</p>
+<p>但是以 f(5)为例，它的过程如下：</p>
 <ol>
-<li>从右上角开始遍历</li>
-<li>当前元素小于目标元素(3 &lt; 5)，根据数组特点，当前行中最大元素也小于目标元素，因此进入下一行</li>
-<li>当前元素大于目标元素(6 &gt; 5)，根据数组特点，行数不变，尝试向前一列查找</li>
-<li>找到 5</li>
+<li>f(5) = f(4) + f(3)</li>
+<li>f(4) = f(3) + f(2)</li>
+<li>f(3) = f(2) + f(1)</li>
+<li>…省略</li>
 </ol>
-<p>代码如下：</p>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e</span></span><br><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> *</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">target</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number[][]&#125;</span> <span class="hljs-variable">array</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Find</span>(<span class="hljs-params">target, array</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> rowNum = array.length;</span><br><span class="line">    <span class="hljs-keyword">if</span> (!rowNum) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">const</span> colNum = array[<span class="hljs-number">0</span>].length;</span><br><span class="line">    <span class="hljs-keyword">if</span> (!colNum) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">let</span> row = <span class="hljs-number">0</span>,</span><br><span class="line">        col = colNum - <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (row &lt; rowNum &amp;&amp; col &gt;= <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (array[row][col] === target) &#123;</span><br><span class="line">            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;</span><br><span class="line">        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (array[row][col] &gt; target) &#123;</span><br><span class="line">            --col;</span><br><span class="line">        &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">            ++row;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意在第 2 步和第 3 步中，我们计算了 2 次 f(3)的值。当要求的 n 越大的时候，重复计算就会越多，时间复杂度就会越高。</p>
+<p>在动态规划的一种做法中，可以借助“备忘录”来实现结果的缓存，避免重复计算。</p>
+<p>代码如下，时间复杂度是 O(N)，空间复杂度是 O(1)。</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-25-fei-bo-na-qi/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">n</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Fibonacci</span>(<span class="hljs-params">n</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> cache = &#123;</span><br><span class="line">        <span class="hljs-number">0</span>: <span class="hljs-number">0</span>,</span><br><span class="line">        <span class="hljs-number">1</span>: <span class="hljs-number">1</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="hljs-keyword">return</span> __Fibonacci(n);</span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">n</span></span></span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment">     */</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__Fibonacci</span>(<span class="hljs-params">n</span>) </span>&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (cache[n] !== <span class="hljs-literal">undefined</span>) &#123;</span><br><span class="line">            <span class="hljs-keyword">return</span> cache[n];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        cache[n] = __Fibonacci(n - <span class="hljs-number">1</span>) + __Fibonacci(n - <span class="hljs-number">2</span>);</span><br><span class="line">        <span class="hljs-keyword">return</span> cache[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>时间复杂度是 O(M+N)，空间复杂度是 O(1)。其中 M 和 N 分别代表行数和列数。</p>
+<h2 id="“备忘录”的其他优点"><a href="#“备忘录”的其他优点" class="headerlink" title="“备忘录”的其他优点"></a>“备忘录”的其他优点</h2><p>虽然备忘录用了 O(N)的空间。但是重复计算同个 f(n)的结果时候，时间复杂度是 O(1)。比如之前调用过一次<code>Fibonacci(10)</code>，那么 f(10)的结果就缓存在了 cache 中。再次调用函数，直接从缓存读取即可。</p>
+<p>同样地，当 n &lt; 10 时候，结果都是从 cache 中直接读取，时间复杂度均是 O(1)。</p>
+<p>再推广，当计算 f(20)的时候，n &lt; 10 的结果都计算完了，不需要重复计算。效率是高于第一种循环写法的调用。</p>
+<p><strong>总结：备忘录缓存了计算结果，避免了多次调用时的重复计算</strong>。</p>
 
             
                 <div class="buttons is-centered">
@@ -242,7 +243,7 @@ var _hmt = _hmt || [];
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a>, <a class="has-link-grey -link" href="/tags/%E6%9F%A5%E6%89%BE/" rel="tag">查找</a>
+                    <a class="has-link-grey -link" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag">动态规划</a>, <a class="has-link-grey -link" href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/" rel="tag">备忘录</a>, <a class="has-link-grey -link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
                 </div>
             </div>
         </div>
@@ -291,17 +292,10 @@ var _hmt = _hmt || [];
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019-12-19-let-us-restart/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">🔝2020，让我们从头来过</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019-12-19-ti-huan-kong-ge/">
-                <span class="level-item">剑指offer - 替换空格 - JavaScript</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019-12-24-xuan-zhuan-shu-zu/">
+                <span class="level-item">剑指offer - 旋转数组的最小数字 - JavaScript</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -479,13 +473,17 @@ var _hmt = _hmt || [];
         <span class="has-mr-6">1</span>
         <span>题目描述</span>
         </a></li><li>
-        <a class="is-flex" href="#解法-1：暴力法">
+        <a class="is-flex" href="#解法-1-数学定义">
         <span class="has-mr-6">2</span>
-        <span>解法 1：暴力法</span>
+        <span>解法 1: 数学定义</span>
         </a></li><li>
-        <a class="is-flex" href="#解法-2：观察数组规律">
+        <a class="is-flex" href="#解法-2-递归-动态规划">
         <span class="has-mr-6">3</span>
-        <span>解法 2：观察数组规律</span>
+        <span>解法 2: 递归 + 动态规划</span>
+        </a></li><li>
+        <a class="is-flex" href="#“备忘录”的其他优点">
+        <span class="has-mr-6">4</span>
+        <span>“备忘录”的其他优点</span>
         </a></li></ul>
             </div>
         </div>
@@ -747,13 +745,17 @@ var _hmt = _hmt || [];
         <span class="has-mr-6">1</span>
         <span>题目描述</span>
         </a></li><li>
-        <a class="is-flex" href="#解法-1：暴力法">
+        <a class="is-flex" href="#解法-1-数学定义">
         <span class="has-mr-6">2</span>
-        <span>解法 1：暴力法</span>
+        <span>解法 1: 数学定义</span>
         </a></li><li>
-        <a class="is-flex" href="#解法-2：观察数组规律">
+        <a class="is-flex" href="#解法-2-递归-动态规划">
         <span class="has-mr-6">3</span>
-        <span>解法 2：观察数组规律</span>
+        <span>解法 2: 递归 + 动态规划</span>
+        </a></li><li>
+        <a class="is-flex" href="#“备忘录”的其他优点">
+        <span class="has-mr-6">4</span>
+        <span>“备忘录”的其他优点</span>
         </a></li></ul>
             </div>
         </div>

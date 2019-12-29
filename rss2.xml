@@ -15,8 +15,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Sun, 29 Dec 2019 14:07:43 GMT</pubDate>
+    <pubDate>Sun, 29 Dec 2019 14:26:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>剑指offer - 斐波那契数列 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-25-fei-bo-na-qi/</link>
+      <guid>http://xxoo521.com/2019-12-25-fei-bo-na-qi/</guid>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：大家都知道斐波那契数列，现在要求输入一个整数 n，请你输出斐波那契数列的第 n 项（从 0 开始，第 0 项为 0）。n&amp;lt;=39。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-25-fei-bo-na-qi/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>剑指offer - 旋转数组的最小数字 - JavaScript</title>
