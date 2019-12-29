@@ -19,11 +19,11 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
 <meta property="article:published_time" content="2019-12-25T00:00:00.000Z">
-<meta property="article:modified_time" content="2019-12-29T14:26:06.836Z">
+<meta property="article:modified_time" content="2019-12-29T14:33:10.711Z">
 <meta property="article:author" content="心谭">
+<meta property="article:tag" content="递归">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="动态规划">
-<meta property="article:tag" content="备忘录">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
 
@@ -221,7 +221,7 @@ var _hmt = _hmt || [];
 <li>…省略</li>
 </ol>
 <p>注意在第 2 步和第 3 步中，我们计算了 2 次 f(3)的值。当要求的 n 越大的时候，重复计算就会越多，时间复杂度就会越高。</p>
-<p>在动态规划的一种做法中，可以借助“备忘录”来实现结果的缓存，避免重复计算。</p>
+<p><strong>在动态规划的一种做法中，可以借助“备忘录”来实现结果的缓存，避免重复计算</strong>。</p>
 <p>代码如下，时间复杂度是 O(N)，空间复杂度是 O(1)。</p>
 <figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-25-fei-bo-na-qi/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">n</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Fibonacci</span>(<span class="hljs-params">n</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> cache = &#123;</span><br><span class="line">        <span class="hljs-number">0</span>: <span class="hljs-number">0</span>,</span><br><span class="line">        <span class="hljs-number">1</span>: <span class="hljs-number">1</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="hljs-keyword">return</span> __Fibonacci(n);</span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">n</span></span></span></span><br><span class="line"><span class="hljs-comment">     * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment">     */</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__Fibonacci</span>(<span class="hljs-params">n</span>) </span>&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (cache[n] !== <span class="hljs-literal">undefined</span>) &#123;</span><br><span class="line">            <span class="hljs-keyword">return</span> cache[n];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        cache[n] = __Fibonacci(n - <span class="hljs-number">1</span>) + __Fibonacci(n - <span class="hljs-number">2</span>);</span><br><span class="line">        <span class="hljs-keyword">return</span> cache[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -243,7 +243,7 @@ var _hmt = _hmt || [];
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag">动态规划</a>, <a class="has-link-grey -link" href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/" rel="tag">备忘录</a>, <a class="has-link-grey -link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+                    <a class="has-link-grey -link" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag">动态规划</a>, <a class="has-link-grey -link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>, <a class="has-link-grey -link" href="/tags/%E9%80%92%E5%BD%92/" rel="tag">递归</a>
                 </div>
             </div>
         </div>
@@ -291,6 +291,13 @@ var _hmt = _hmt || [];
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019-12-26-qing-wa-tiao-tai-jie/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">剑指offer - 青蛙跳台阶 - JavaScript</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -340,7 +347,7 @@ var _hmt = _hmt || [];
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            10
+                            11
                         </p>
                     </a>
                 </div>
@@ -364,7 +371,7 @@ var _hmt = _hmt || [];
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            12
+                            11
                         </p>
                     </a>
                 </div>
@@ -418,7 +425,7 @@ var _hmt = _hmt || [];
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 10px;">动态规划</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 10px;">双指针</a> <a href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/" style="font-size: 10px;">备忘录</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 10px;">字符串</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 10px;">数学</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 20px;">数组</a> <a href="/tags/%E6%9F%A5%E6%89%BE/" style="font-size: 20px;">查找</a> <a href="/tags/%E6%A0%88/" style="font-size: 20px;">栈</a> <a href="/tags/%E6%A0%91/" style="font-size: 10px;">树</a> <a href="/tags/%E9%80%92%E5%BD%92/" style="font-size: 10px;">递归</a> <a href="/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 10px;">链表</a> <a href="/tags/%E9%98%9F%E5%88%97/" style="font-size: 10px;">队列</a>
+        <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 15px;">动态规划</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 10px;">双指针</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 10px;">字符串</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 15px;">数学</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 15px;">数组</a> <a href="/tags/%E6%9F%A5%E6%89%BE/" style="font-size: 15px;">查找</a> <a href="/tags/%E6%A0%88/" style="font-size: 15px;">栈</a> <a href="/tags/%E6%A0%91/" style="font-size: 10px;">树</a> <a href="/tags/%E9%80%92%E5%BD%92/" style="font-size: 20px;">递归</a> <a href="/tags/%E9%93%BE%E8%A1%A8/" style="font-size: 10px;">链表</a> <a href="/tags/%E9%98%9F%E5%88%97/" style="font-size: 10px;">队列</a>
     </div>
 </div>
     
@@ -436,7 +443,7 @@ var _hmt = _hmt || [];
                     <span class="level-item">十二月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">9</span>
+                    <span class="level-item tag">10</span>
                 </span>
             </a>
         </li>
@@ -495,6 +502,25 @@ var _hmt = _hmt || [];
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019-12-26-qing-wa-tiao-tai-jie/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 青蛙跳台阶 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-26T00:00:00.000Z">2019-12-26</time></div>
+                    <a href="/2019-12-26-qing-wa-tiao-tai-jie/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 青蛙跳台阶 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -572,25 +598,6 @@ var _hmt = _hmt || [];
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019-12-21-re-construct-btree/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 重建二叉树 - JavaScript">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-21T00:00:00.000Z">2019-12-21</time></div>
-                    <a href="/2019-12-21-re-construct-btree/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 重建二叉树 - JavaScript</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
         
@@ -608,7 +615,7 @@ var _hmt = _hmt || [];
                 <span class="level-item">剑指offer</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/%E6%83%B3%E6%B3%95/">
@@ -635,20 +642,13 @@ var _hmt = _hmt || [];
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
                         <span class="tag">动态规划</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
                         <span class="tag">双指针</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/">
-                        <span class="tag">备忘录</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -663,7 +663,7 @@ var _hmt = _hmt || [];
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E6%95%B0%E5%AD%A6/">
                         <span class="tag">数学</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -698,7 +698,7 @@ var _hmt = _hmt || [];
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E9%80%92%E5%BD%92/">
                         <span class="tag">递归</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -770,6 +770,25 @@ var _hmt = _hmt || [];
         
         <article class="media">
             
+            <a href="/2019-12-26-qing-wa-tiao-tai-jie/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 青蛙跳台阶 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-26T00:00:00.000Z">2019-12-26</time></div>
+                    <a href="/2019-12-26-qing-wa-tiao-tai-jie/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 青蛙跳台阶 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019-12-25-fei-bo-na-qi/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 斐波那契数列 - JavaScript">
@@ -844,25 +863,6 @@ var _hmt = _hmt || [];
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019-12-21-re-construct-btree/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 重建二叉树 - JavaScript">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-21T00:00:00.000Z">2019-12-21</time></div>
-                    <a href="/2019-12-21-re-construct-btree/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 重建二叉树 - JavaScript</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -880,7 +880,7 @@ var _hmt = _hmt || [];
                 <span class="level-item">剑指offer</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/%E6%83%B3%E6%B3%95/">
@@ -907,20 +907,13 @@ var _hmt = _hmt || [];
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
                         <span class="tag">动态规划</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
                         <span class="tag">双指针</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/">
-                        <span class="tag">备忘录</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -935,7 +928,7 @@ var _hmt = _hmt || [];
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E6%95%B0%E5%AD%A6/">
                         <span class="tag">数学</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -970,7 +963,7 @@ var _hmt = _hmt || [];
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E9%80%92%E5%BD%92/">
                         <span class="tag">递归</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 

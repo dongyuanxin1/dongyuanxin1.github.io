@@ -15,8 +15,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Sun, 29 Dec 2019 14:26:06 GMT</pubDate>
+    <pubDate>Sun, 29 Dec 2019 14:40:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>剑指offer - 青蛙跳台阶 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/</link>
+      <guid>http://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/</guid>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;: 一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法（先后次序不同算不同的结果）。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>剑指offer - 斐波那契数列 - JavaScript</title>
@@ -113,22 +128,18 @@
     </item>
     
     <item>
-      <title>🔝2020，让我们从头来过</title>
-      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
-      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
+      <title>剑指offer - 替换空格 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</link>
+      <guid>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</guid>
       <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;blockquote&gt;
-&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
-&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;: 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为 We Are Happy.则经过替换之后的字符串为 We%20Are%20Happy。&lt;/p&gt;
       
       </description>
       
       
-      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
+      <comments>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/#disqus_thread</comments>
     </item>
     
     <item>
@@ -147,18 +158,22 @@
     </item>
     
     <item>
-      <title>剑指offer - 替换空格 - JavaScript</title>
-      <link>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</link>
-      <guid>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</guid>
+      <title>🔝2020，让我们从头来过</title>
+      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
+      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
       <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;: 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为 We Are Happy.则经过替换之后的字符串为 We%20Are%20Happy。&lt;/p&gt;
+        &lt;blockquote&gt;
+&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
+&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
       
       </description>
       
       
-      <comments>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/#disqus_thread</comments>
+      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
     </item>
     
     <item>
