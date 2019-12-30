@@ -15,8 +15,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Sun, 29 Dec 2019 15:07:26 GMT</pubDate>
+    <pubDate>Mon, 30 Dec 2019 15:01:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>剑指offer - 矩阵覆盖 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-30-ju-zhen-fu-gai/</link>
+      <guid>http://xxoo521.com/2019-12-30-ju-zhen-fu-gai/</guid>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;:我们可以用 &lt;code&gt;2*1&lt;/code&gt; 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 &lt;code&gt;2*1&lt;/code&gt; 的小矩形无重叠地覆盖一个 &lt;code&gt;2*n&lt;/code&gt; 的大矩形，总共有多少种方法？&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-30-ju-zhen-fu-gai/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>剑指offer - 变态跳台阶 - JavaScript</title>
@@ -97,21 +112,6 @@
     </item>
     
     <item>
-      <title>剑指offer - 重建二叉树 - JavaScript</title>
-      <link>http://xxoo521.com/2019-12-21-re-construct-btree/</link>
-      <guid>http://xxoo521.com/2019-12-21-re-construct-btree/</guid>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列&lt;code&gt;{1,2,4,7,3,5,6,8}&lt;/code&gt;和中序遍历序列&lt;code&gt;{4,7,2,1,5,3,8,6}&lt;/code&gt;，则重建二叉树并返回。&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>http://xxoo521.com/2019-12-21-re-construct-btree/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
       <link>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</link>
       <guid>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</guid>
@@ -124,6 +124,21 @@
       
       
       <comments>http://xxoo521.com/2019-12-21-da-yin-lian-biao/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>剑指offer - 重建二叉树 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-21-re-construct-btree/</link>
+      <guid>http://xxoo521.com/2019-12-21-re-construct-btree/</guid>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列&lt;code&gt;{1,2,4,7,3,5,6,8}&lt;/code&gt;和中序遍历序列&lt;code&gt;{4,7,2,1,5,3,8,6}&lt;/code&gt;，则重建二叉树并返回。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-21-re-construct-btree/#disqus_thread</comments>
     </item>
     
     <item>
@@ -143,22 +158,18 @@
     </item>
     
     <item>
-      <title>🔝2020，让我们从头来过</title>
-      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
-      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
+      <title>剑指offer - 二维数组中的查找 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</link>
+      <guid>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</guid>
       <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;blockquote&gt;
-&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
-&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。&lt;/p&gt;
       
       </description>
       
       
-      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
+      <comments>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/#disqus_thread</comments>
     </item>
     
     <item>
@@ -177,18 +188,22 @@
     </item>
     
     <item>
-      <title>剑指offer - 二维数组中的查找 - JavaScript</title>
-      <link>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</link>
-      <guid>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</guid>
+      <title>🔝2020，让我们从头来过</title>
+      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
+      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
       <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。&lt;/p&gt;
+        &lt;blockquote&gt;
+&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
+&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
       
       </description>
       
       
-      <comments>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/#disqus_thread</comments>
+      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
     </item>
     
     <item>

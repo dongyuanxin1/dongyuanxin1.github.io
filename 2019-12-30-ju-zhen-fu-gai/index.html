@@ -7,18 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>分类: 想法 - 心谭博客 - 前端算法</title>
+<title>剑指offer - 矩阵覆盖 - JavaScript - 心谭博客 - 前端算法</title>
 
 
-    <meta name="description" content="专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题">
-<meta property="og:type" content="website">
-<meta property="og:title" content="心谭博客 - 前端算法">
-<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;categories&#x2F;%E6%83%B3%E6%B3%95&#x2F;index.html">
+    <meta name="description" content="题目描述:我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="剑指offer - 矩阵覆盖 - JavaScript">
+<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;2019-12-30-ju-zhen-fu-gai&#x2F;index.html">
 <meta property="og:site_name" content="心谭博客 - 前端算法">
-<meta property="og:description" content="专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题">
+<meta property="og:description" content="题目描述:我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
+<meta property="article:published_time" content="2019-12-30T00:00:00.000Z">
+<meta property="article:modified_time" content="2019-12-30T15:01:10.603Z">
 <meta property="article:author" content="心谭">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="递归">
+<meta property="article:tag" content="动态规划">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
 
@@ -112,7 +117,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="心谭博客 - 前端算法" height="28">
+                <img src="/images/logo.svg" alt="剑指offer - 矩阵覆盖 - JavaScript" height="28">
             
             </a>
         </div>
@@ -164,119 +169,78 @@ var _hmt = _hmt || [];
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/categories">分类</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">想法</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-20T00:00:00.000Z">2019-12-20</time>
+                <time class="level-item has-text-grey" datetime="2019-12-30T00:00:00.000Z">2019-12-30</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E6%83%B3%E6%B3%95/">想法</a>
+                <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 387 个字)
+                    3 分钟 读完 (大约 396 个字)
                 </span>
                 
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
                 
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019-12-20-contact/">高效交流，欢迎进群</a>
+                剑指offer - 矩阵覆盖 - JavaScript
             
         </h1>
         <div class="content">
-            <p>想不明白的问题，别人的几句话就可能点醒。而一个人坚持学习难免开小差，共同交流才更有氛围。</p>
-<p>在这里，不仅仅能提升前端工程/算法设计能力，还能遇到更多小伙伴。</p>
-            
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019-12-20-contact/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
+            <p><strong>题目描述</strong>:我们可以用 <code>2*1</code> 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 <code>2*1</code> 的小矩形无重叠地覆盖一个 <code>2*n</code> 的大矩形，总共有多少种方法？</p>
+<a id="more"></a>
 
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>我们可以用 <code>2*1</code> 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 <code>2*1</code> 的小矩形无重叠地覆盖一个 <code>2*n</code> 的大矩形，总共有多少种方法？</p>
+<h2 id="解法-1-斐波那契数列"><a href="#解法-1-斐波那契数列" class="headerlink" title="解法 1: 斐波那契数列"></a>解法 1: 斐波那契数列</h2><p>这题和<a href="https://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/">“青蛙跳台阶”</a>类似，也是斐波那契数列的变形。</p>
+<p>假设覆盖<code>2*n</code>矩形有 f(n) 种方法。那么这个<code>2*n</code>的矩形可能由<code>2*(n-1)</code>和<code>2*(n-2)</code>的矩形直接一步变化而来。如下图所示：</p>
+<p><img src="https://tva1.sinaimg.cn/large/006tNbRwgy1gaf53ukb9xj30u0140q4m.jpg" alt></p>
+<p>因此 f(n) = f(n - 1) + f(n - 2)。</p>
+<p>代码如下：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-30-ju-zhen-fu-gai/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/72a5a919508a4251859fb2cfb987a0e6</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number&#125;</span> <span class="hljs-variable">number</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rectCover</span>(<span class="hljs-params">number</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (number === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> cache = &#123;</span><br><span class="line">        <span class="hljs-number">0</span>: <span class="hljs-number">0</span>,</span><br><span class="line">        <span class="hljs-number">1</span>: <span class="hljs-number">1</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="hljs-keyword">return</span> __rectCover(number + <span class="hljs-number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__rectCover</span>(<span class="hljs-params">n</span>) </span>&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (cache[n] !== <span class="hljs-literal">undefined</span>) &#123;</span><br><span class="line">            <span class="hljs-keyword">return</span> cache[n];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        cache[n] = __rectCover(n - <span class="hljs-number">1</span>) + __rectCover(n - <span class="hljs-number">2</span>);</span><br><span class="line">        <span class="hljs-keyword">return</span> cache[n];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-    
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-19T00:00:00.000Z">2019-12-19</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E6%83%B3%E6%B3%95/">想法</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 分钟 读完 (大约 1464 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019-12-19-let-us-restart/">🔝2020，让我们从头来过</a>
-            
-        </h1>
-        <div class="content">
-            <blockquote>
-<p>随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？</p>
+<h2 id="斐波那契相关题目"><a href="#斐波那契相关题目" class="headerlink" title="斐波那契相关题目"></a>斐波那契相关题目</h2><blockquote>
+<p>专注前端与算法的系列干货分享，欢迎关注(¬‿¬)：<br>「微信公众号：<strong>心谭博客</strong>」| <a href="https://xxoo521.com/">xxoo521.com</a> | <a href="https://github.com/dongyuanxin/blog" target="_blank" rel="noopener">GitHub</a></p>
 </blockquote>
-<p><strong>对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计</strong> ……</p>
-<p>域名 <a href="https://xxoo521.com/">xxoo521.com</a> 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！</p>
+<ul>
+<li>斐波那契数列：<a href="https://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/">https://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/</a></li>
+<li>青蛙跳台阶：<a href="https://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/">https://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/</a></li>
+</ul>
+
+            
+                <div class="buttons is-centered">
+                    <img src="/images/wechat-bar.png" alt="" srcset="">
+                </div>
+                <h3 style="color: #7a7a7a; font-size: 0.75em;" class="menu-label has-text-centered">扫码关注「心谭博客」, 专注前端与算法</h3>
+                <h3 style="color: #7a7a7a; font-size: 0.75em;" class="menu-label has-text-centered">目前已有前端面试、剑指Offer·JS、动画设计、Webpack等系列专题</h3>
             
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019-12-19-let-us-restart/#more">阅读更多</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" rel="tag">动态规划</a>, <a class="has-link-grey -link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>, <a class="has-link-grey -link" href="/tags/%E9%80%92%E5%BD%92/" rel="tag">递归</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -284,66 +248,53 @@ var _hmt = _hmt || [];
 
 
 
-
-
-
-
-
-    
 <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-25T00:00:00.000Z">2019-11-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E6%83%B3%E6%B3%95/">想法</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 分钟 读完 (大约 1012 个字)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">扫码加入 前端&amp;算法 交流群</h3>
+        <div class="buttons is-centered">
             
-                <a class="has-link-black-ter" href="/2019-11-25-how-insist-on-learning/">如何保持保持高效学习？</a>
-            
-        </h1>
-        <div class="content">
-            <p>这是我最近特别想记录的心得，关于「如何保持高效学习」。</p>
-<p>在从公司离职后回校作毕业设计的很长一段时间内，我都在不停地滑水。所谓学习 1 小时，摸鱼 2 小时。除了坚持每周三次的健身，自己给自己制定的学习任务，双 11 囤下来书，都是进展缓慢。</p>
-<p>不像在公司那样，周围同事都很努力，到处弥漫着积极上进的氛围。学校里面大多数时间是自己独自一人在搞事情，没有监督，没有比较，自然严重缺乏动力。</p>
-<p>所以，我意识到确实是要作出一些改变了。</p>
-            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-qq"></i>
+    </span>
+    <span>QQ群</span>
+    <div class="qrcode">
+        <img src="/images/qq-qun.png" alt="QQ群" />
+    </div>
+</a>
+
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信群</span>
+    <div class="qrcode"><img src="/images/wechat-qun.png" alt="微信群"></div>
+</a>
+
+                
         </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019-11-25-how-insist-on-learning/#more">阅读更多</a>
-                </div>
-            </div>
-        </div>
-        
-        
     </div>
 </div>
 
 
 
-
-
-
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019-12-27-bian-tai-tiao-tai-jie/">
+                <span class="level-item">剑指offer - 变态跳台阶 - JavaScript</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -503,6 +454,30 @@ var _hmt = _hmt || [];
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#题目描述">
+        <span class="has-mr-6">1</span>
+        <span>题目描述</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-1-斐波那契数列">
+        <span class="has-mr-6">2</span>
+        <span>解法 1: 斐波那契数列</span>
+        </a></li><li>
+        <a class="is-flex" href="#斐波那契相关题目">
+        <span class="has-mr-6">3</span>
+        <span>斐波那契相关题目</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
         
             <div class="card widget">
     <div class="card-content">
@@ -740,6 +715,30 @@ var _hmt = _hmt || [];
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#题目描述">
+        <span class="has-mr-6">1</span>
+        <span>题目描述</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-1-斐波那契数列">
+        <span class="has-mr-6">2</span>
+        <span>解法 1: 斐波那契数列</span>
+        </a></li><li>
+        <a class="is-flex" href="#斐波那契相关题目">
+        <span class="has-mr-6">3</span>
+        <span>斐波那契相关题目</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
