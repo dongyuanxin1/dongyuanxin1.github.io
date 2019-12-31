@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xxoo521.com/"/>
-  <updated>2019-12-30T15:02:20.461Z</updated>
+  <updated>2019-12-31T14:19:45.403Z</updated>
   <id>http://xxoo521.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剑指offer - 二进制中1的个数 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-31-number-of-one/"/>
+    <id>http://xxoo521.com/2019-12-31-number-of-one/</id>
+    <published>2019-12-31T00:00:00.000Z</published>
+    <updated>2019-12-31T14:19:45.403Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指offer - 矩阵覆盖 - JavaScript</title>
@@ -162,29 +183,6 @@
   </entry>
   
   <entry>
-    <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
-    <link href="http://xxoo521.com/2019-12-21-da-yin-lian-biao/"/>
-    <id>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</id>
-    <published>2019-12-21T00:00:00.000Z</published>
-    <updated>2019-12-29T14:07:02.921Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
-    
-  </entry>
-  
-  <entry>
     <title>剑指offer - 重建二叉树 - JavaScript</title>
     <link href="http://xxoo521.com/2019-12-21-re-construct-btree/"/>
     <id>http://xxoo521.com/2019-12-21-re-construct-btree/</id>
@@ -204,6 +202,29 @@
       <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
     
       <category term="树" scheme="http://xxoo521.com/tags/%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-21-da-yin-lian-biao/"/>
+    <id>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</id>
+    <published>2019-12-21T00:00:00.000Z</published>
+    <updated>2019-12-29T14:07:02.921Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
     
   </entry>
   
