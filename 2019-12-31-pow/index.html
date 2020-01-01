@@ -13,18 +13,18 @@
     <meta name="description" content="题目描述：给定一个 double 类型的浮点数 base 和 int 类型的整数 exponent。求 base 的 exponent 次方。 保证 base 和 exponent 不同时为 0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="剑指offer - 数值的整次方(四种解法) - JavaScript">
-<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;2020-12-31-pow&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;2019-12-31-pow&#x2F;index.html">
 <meta property="og:site_name" content="心谭博客 - 前端算法">
 <meta property="og:description" content="题目描述：给定一个 double 类型的浮点数 base 和 int 类型的整数 exponent。求 base 的 exponent 次方。 保证 base 和 exponent 不同时为 0">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
-<meta property="article:published_time" content="2020-12-31T00:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-01T11:39:22.523Z">
+<meta property="article:published_time" content="2019-12-31T00:00:00.000Z">
+<meta property="article:modified_time" content="2020-01-01T11:40:53.704Z">
 <meta property="article:author" content="心谭">
 <meta property="article:tag" content="位运算">
-<meta property="article:tag" content="查找">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="递归">
+<meta property="article:tag" content="查找">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
 
@@ -177,7 +177,7 @@ var _hmt = _hmt || [];
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-12-31T00:00:00.000Z">2020-12-31</time>
+                <time class="level-item has-text-grey" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
@@ -212,11 +212,11 @@ var _hmt = _hmt || [];
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个 double 类型的浮点数 base 和 int 类型的整数 exponent。求 base 的 exponent 次方。</p>
 <p>保证 base 和 exponent 不同时为 0</p>
 <h2 id="解法-1-内置函数"><a href="#解法-1-内置函数" class="headerlink" title="解法 1: 内置函数"></a>解法 1: 内置函数</h2><p>第一反应直接调用库函数。</p>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2020-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.pow(base, exponent);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.pow(base, exponent);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="解法-2-暴力法"><a href="#解法-2-暴力法" class="headerlink" title="解法 2: 暴力法"></a>解法 2: 暴力法</h2><p>将数字 base 连续乘 exponent 次即可。</p>
 <p>时间复杂度是 O(N),空间复杂度是 O(1)</p>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2020-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> isNegative = exponent &lt; <span class="hljs-number">0</span>; <span class="hljs-comment">// 是否是负指数</span></span><br><span class="line">    <span class="hljs-keyword">const</span> absExponent = <span class="hljs-built_in">Math</span>.abs(exponent);</span><br><span class="line">    <span class="hljs-keyword">let</span> result = base;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; absExponent; ++i) &#123;</span><br><span class="line">        result = result * base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> isNegative ? <span class="hljs-number">1</span> / result : result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> isNegative = exponent &lt; <span class="hljs-number">0</span>; <span class="hljs-comment">// 是否是负指数</span></span><br><span class="line">    <span class="hljs-keyword">const</span> absExponent = <span class="hljs-built_in">Math</span>.abs(exponent);</span><br><span class="line">    <span class="hljs-keyword">let</span> result = base;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>; i &lt; absExponent; ++i) &#123;</span><br><span class="line">        result = result * base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> isNegative ? <span class="hljs-number">1</span> / result : result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="解法-3-二分法"><a href="#解法-3-二分法" class="headerlink" title="解法 3: 二分法"></a>解法 3: 二分法</h2><p>为了方便讨论，假设指数<code>exponent</code>是正数。那么递归式如下：</p>
 <ul>
@@ -225,7 +225,7 @@ var _hmt = _hmt || [];
 </ul>
 <p>对于负指数<code>exponent</code>的情况，取其绝对值先计算。将最后结果取倒数即可。</p>
 <p>时间复杂度是 O(logN)；由于采用递归结构，空间复杂度是 O(logN)。</p>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2020-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> isNegative = exponent &lt; <span class="hljs-number">0</span>; <span class="hljs-comment">// 是否是负指数</span></span><br><span class="line">    <span class="hljs-keyword">const</span> result = absPower(base, <span class="hljs-built_in">Math</span>.abs(exponent));</span><br><span class="line">    <span class="hljs-keyword">return</span> isNegative ? <span class="hljs-number">1</span> / result : result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">absPower</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> subResult = absPower(base, <span class="hljs-built_in">Math</span>.floor(exponent / <span class="hljs-number">2</span>));</span><br><span class="line">    <span class="hljs-keyword">return</span> exponent % <span class="hljs-number">2</span> ? subResult * subResult * base : subResult * subResult;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> isNegative = exponent &lt; <span class="hljs-number">0</span>; <span class="hljs-comment">// 是否是负指数</span></span><br><span class="line">    <span class="hljs-keyword">const</span> result = absPower(base, <span class="hljs-built_in">Math</span>.abs(exponent));</span><br><span class="line">    <span class="hljs-keyword">return</span> isNegative ? <span class="hljs-number">1</span> / result : result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">absPower</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> subResult = absPower(base, <span class="hljs-built_in">Math</span>.floor(exponent / <span class="hljs-number">2</span>));</span><br><span class="line">    <span class="hljs-keyword">return</span> exponent % <span class="hljs-number">2</span> ? subResult * subResult * base : subResult * subResult;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="解法-4-位运算"><a href="#解法-4-位运算" class="headerlink" title="解法 4: 位运算"></a>解法 4: 位运算</h2><p>第 3 种解法可以转换为迭代写法。迭代写法和位运算有关。</p>
 <p>为了理解，假设 base=3，exponent= 5。那么 5 的二进制是：101。所以，3 的 5 次方可以写成下图的格式：</p>
@@ -240,7 +240,7 @@ var _hmt = _hmt || [];
 <li>结束</li>
 </ul>
 <p>代码如下：</p>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2020-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> isNegative = exponent &lt; <span class="hljs-number">0</span>; <span class="hljs-comment">// 是否是负指数</span></span><br><span class="line">    <span class="hljs-keyword">let</span> absExponent = <span class="hljs-built_in">Math</span>.abs(exponent);</span><br><span class="line">    <span class="hljs-keyword">let</span> result = <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (absExponent) &#123;</span><br><span class="line">        <span class="hljs-comment">// 如果exponent最右位是1，将当前base累乘到result</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (absExponent &amp; <span class="hljs-number">1</span>) &#123;</span><br><span class="line">            result = result * base;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        base = base * base; <span class="hljs-comment">// base自乘法</span></span><br><span class="line">        absExponent = <span class="hljs-built_in">Math</span>.floor(absExponent / <span class="hljs-number">2</span>); <span class="hljs-comment">// exponent右移1位</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> isNegative ? <span class="hljs-number">1</span> / result : result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2019-12-31-pow/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Power</span>(<span class="hljs-params">base, exponent</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (exponent === <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> base;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">const</span> isNegative = exponent &lt; <span class="hljs-number">0</span>; <span class="hljs-comment">// 是否是负指数</span></span><br><span class="line">    <span class="hljs-keyword">let</span> absExponent = <span class="hljs-built_in">Math</span>.abs(exponent);</span><br><span class="line">    <span class="hljs-keyword">let</span> result = <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (absExponent) &#123;</span><br><span class="line">        <span class="hljs-comment">// 如果exponent最右位是1，将当前base累乘到result</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (absExponent &amp; <span class="hljs-number">1</span>) &#123;</span><br><span class="line">            result = result * base;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        base = base * base; <span class="hljs-comment">// base自乘法</span></span><br><span class="line">        absExponent = <span class="hljs-built_in">Math</span>.floor(absExponent / <span class="hljs-number">2</span>); <span class="hljs-comment">// exponent右移1位</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> isNegative ? <span class="hljs-number">1</span> / result : result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
             
             
@@ -305,10 +305,17 @@ var _hmt = _hmt || [];
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019-12-31-number-of-one/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">剑指offer - 二进制中1的个数 - JavaScript</span>
+            </a>
+        </div>
+        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019-12-31-number-of-one/">
-                <span class="level-item">剑指offer - 二进制中1的个数 - JavaScript</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019-12-30-ju-zhen-fu-gai/">
+                <span class="level-item">剑指offer - 矩阵覆盖 - JavaScript</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -532,23 +539,12 @@ var _hmt = _hmt || [];
         <ul class="menu-list">
         
         <li>
-            <a class="level is-marginless" href="/archives/2020/12/">
-                <span class="level-start">
-                    <span class="level-item">十二月 2020</span>
-                </span>
-                <span class="level-end">
-                    <span class="level-item tag">1</span>
-                </span>
-            </a>
-        </li>
-        
-        <li>
             <a class="level is-marginless" href="/archives/2019/12/">
                 <span class="level-start">
                     <span class="level-item">十二月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">13</span>
+                    <span class="level-item tag">14</span>
                 </span>
             </a>
         </li>
@@ -614,25 +610,6 @@ var _hmt = _hmt || [];
         
         <article class="media">
             
-            <a href="/2020-12-31-pow/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-12-31T00:00:00.000Z">2020-12-31</time></div>
-                    <a href="/2020-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019-12-31-number-of-one/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 二进制中1的个数 - JavaScript">
@@ -643,6 +620,25 @@ var _hmt = _hmt || [];
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
                     <a href="/2019-12-31-number-of-one/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 二进制中1的个数 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-pow/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
                     </p>
@@ -793,25 +789,6 @@ var _hmt = _hmt || [];
         
         <article class="media">
             
-            <a href="/2020-12-31-pow/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-12-31T00:00:00.000Z">2020-12-31</time></div>
-                    <a href="/2020-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019-12-31-number-of-one/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 二进制中1的个数 - JavaScript">
@@ -822,6 +799,25 @@ var _hmt = _hmt || [];
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
                     <a href="/2019-12-31-number-of-one/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 二进制中1的个数 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-pow/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
                     </p>

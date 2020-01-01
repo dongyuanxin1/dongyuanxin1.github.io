@@ -15,14 +15,14 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Wed, 01 Jan 2020 11:39:22 GMT</pubDate>
+    <pubDate>Wed, 01 Jan 2020 11:40:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>剑指offer - 数值的整次方(四种解法) - JavaScript</title>
-      <link>http://xxoo521.com/2020-12-31-pow/</link>
-      <guid>http://xxoo521.com/2020-12-31-pow/</guid>
-      <pubDate>Thu, 31 Dec 2020 00:00:00 GMT</pubDate>
+      <link>http://xxoo521.com/2019-12-31-pow/</link>
+      <guid>http://xxoo521.com/2019-12-31-pow/</guid>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
       <description>
       
         &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：给定一个 double 类型的浮点数 base 和 int 类型的整数 exponent。求 base 的 exponent 次方。&lt;/p&gt;
@@ -31,7 +31,7 @@
       </description>
       
       
-      <comments>http://xxoo521.com/2020-12-31-pow/#disqus_thread</comments>
+      <comments>http://xxoo521.com/2019-12-31-pow/#disqus_thread</comments>
     </item>
     
     <item>
