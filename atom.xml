@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xxoo521.com/"/>
-  <updated>2020-01-01T11:40:53.704Z</updated>
+  <updated>2019-12-31T14:19:45.403Z</updated>
   <id>http://xxoo521.com/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>剑指offer - 数值的整次方(四种解法) - JavaScript</title>
-    <link href="http://xxoo521.com/2019-12-31-pow/"/>
-    <id>http://xxoo521.com/2019-12-31-pow/</id>
-    <published>2019-12-31T00:00:00.000Z</published>
-    <updated>2020-01-01T11:40:53.704Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：给定一个 double 类型的浮点数 base 和 int 类型的整数 exponent。求 base 的 exponent 次方。&lt;/p&gt;
-&lt;p&gt;保证 base 和 exponent 不同时为 0&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
-    
-      <category term="数学" scheme="http://xxoo521.com/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
-    
-      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
-    
-  </entry>
   
   <entry>
     <title>剑指offer - 二进制中1的个数 - JavaScript</title>
@@ -62,6 +34,34 @@
     
     
       <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>剑指offer - 数值的整次方(四种解法) - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-31-pow/"/>
+    <id>http://xxoo521.com/2019-12-31-pow/</id>
+    <published>2019-12-31T00:00:00.000Z</published>
+    <updated>2020-01-01T11:43:26.817Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：给定一个 double 类型的浮点数 base 和 int 类型的整数 exponent。求 base 的 exponent 次方。&lt;/p&gt;
+&lt;p&gt;保证 base 和 exponent 不同时为 0&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
+      <category term="数学" scheme="http://xxoo521.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
+    
+      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
     
   </entry>
   
@@ -211,29 +211,6 @@
   </entry>
   
   <entry>
-    <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
-    <link href="http://xxoo521.com/2019-12-21-da-yin-lian-biao/"/>
-    <id>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</id>
-    <published>2019-12-21T00:00:00.000Z</published>
-    <updated>2019-12-29T14:07:02.921Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
-    
-      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
-    
-  </entry>
-  
-  <entry>
     <title>剑指offer - 重建二叉树 - JavaScript</title>
     <link href="http://xxoo521.com/2019-12-21-re-construct-btree/"/>
     <id>http://xxoo521.com/2019-12-21-re-construct-btree/</id>
@@ -257,6 +234,29 @@
   </entry>
   
   <entry>
+    <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-21-da-yin-lian-biao/"/>
+    <id>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</id>
+    <published>2019-12-21T00:00:00.000Z</published>
+    <updated>2019-12-29T14:07:02.921Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
+    
+  </entry>
+  
+  <entry>
     <title>高效交流，欢迎进群</title>
     <link href="http://xxoo521.com/2019-12-20-contact/"/>
     <id>http://xxoo521.com/2019-12-20-contact/</id>
@@ -267,29 +267,6 @@
     
       &lt;p&gt;想不明白的问题，别人的几句话就可能点醒。而一个人坚持学习难免开小差，共同交流才更有氛围。&lt;/p&gt;
 &lt;p&gt;在这里，不仅仅能提升前端工程/算法设计能力，还能遇到更多小伙伴。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="想法" scheme="http://xxoo521.com/categories/%E6%83%B3%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>🔝2020，让我们从头来过</title>
-    <link href="http://xxoo521.com/2019-12-19-let-us-restart/"/>
-    <id>http://xxoo521.com/2019-12-19-let-us-restart/</id>
-    <published>2019-12-19T00:00:00.000Z</published>
-    <updated>2019-12-19T06:52:23.131Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
-&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
     
     </summary>
     
@@ -342,6 +319,29 @@
       <category term="字符串" scheme="http://xxoo521.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
       <category term="双指针" scheme="http://xxoo521.com/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>🔝2020，让我们从头来过</title>
+    <link href="http://xxoo521.com/2019-12-19-let-us-restart/"/>
+    <id>http://xxoo521.com/2019-12-19-let-us-restart/</id>
+    <published>2019-12-19T00:00:00.000Z</published>
+    <updated>2019-12-19T06:52:23.131Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
+&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="想法" scheme="http://xxoo521.com/categories/%E6%83%B3%E6%B3%95/"/>
+    
     
   </entry>
   

@@ -15,8 +15,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Wed, 01 Jan 2020 11:40:53 GMT</pubDate>
+    <pubDate>Tue, 31 Dec 2019 14:19:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>剑指offer - 二进制中1的个数 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-31-number-of-one/</link>
+      <guid>http://xxoo521.com/2019-12-31-number-of-one/</guid>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-31-number-of-one/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>剑指offer - 数值的整次方(四种解法) - JavaScript</title>
@@ -32,21 +47,6 @@
       
       
       <comments>http://xxoo521.com/2019-12-31-pow/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>剑指offer - 二进制中1的个数 - JavaScript</title>
-      <link>http://xxoo521.com/2019-12-31-number-of-one/</link>
-      <guid>http://xxoo521.com/2019-12-31-number-of-one/</guid>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>http://xxoo521.com/2019-12-31-number-of-one/#disqus_thread</comments>
     </item>
     
     <item>
@@ -143,21 +143,6 @@
     </item>
     
     <item>
-      <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
-      <link>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</link>
-      <guid>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</guid>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>http://xxoo521.com/2019-12-21-da-yin-lian-biao/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>剑指offer - 重建二叉树 - JavaScript</title>
       <link>http://xxoo521.com/2019-12-21-re-construct-btree/</link>
       <guid>http://xxoo521.com/2019-12-21-re-construct-btree/</guid>
@@ -170,6 +155,21 @@
       
       
       <comments>http://xxoo521.com/2019-12-21-re-construct-btree/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>剑指offer - 从尾到头打印链表 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</link>
+      <guid>http://xxoo521.com/2019-12-21-da-yin-lian-biao/</guid>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个链表，按链表从尾到头的顺序返回一个 ArrayList。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-21-da-yin-lian-biao/#disqus_thread</comments>
     </item>
     
     <item>
@@ -186,25 +186,6 @@
       
       
       <comments>http://xxoo521.com/2019-12-20-contact/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>🔝2020，让我们从头来过</title>
-      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
-      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
-      <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
-&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
     </item>
     
     <item>
@@ -235,6 +216,25 @@
       
       
       <comments>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>🔝2020，让我们从头来过</title>
+      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
+      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
+&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
     </item>
     
     <item>
