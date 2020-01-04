@@ -61,11 +61,11 @@
     
       <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
     
-      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
-    
       <category term="数学" scheme="http://xxoo521.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
+    
+      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
   </entry>
   
@@ -302,29 +302,6 @@
   </entry>
   
   <entry>
-    <title>剑指offer - 二维数组中的查找 - JavaScript</title>
-    <link href="http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/"/>
-    <id>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</id>
-    <published>2019-12-19T00:00:00.000Z</published>
-    <updated>2019-12-29T14:06:21.674Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
-    
-    
-      <category term="数组" scheme="http://xxoo521.com/tags/%E6%95%B0%E7%BB%84/"/>
-    
-      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
-    
-  </entry>
-  
-  <entry>
     <title>🔝2020，让我们从头来过</title>
     <link href="http://xxoo521.com/2019-12-19-let-us-restart/"/>
     <id>http://xxoo521.com/2019-12-19-let-us-restart/</id>
@@ -348,6 +325,29 @@
   </entry>
   
   <entry>
+    <title>剑指offer - 二维数组中的查找 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/"/>
+    <id>http://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/</id>
+    <published>2019-12-19T00:00:00.000Z</published>
+    <updated>2019-12-29T14:06:21.674Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="数组" scheme="http://xxoo521.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>剑指offer - 替换空格 - JavaScript</title>
     <link href="http://xxoo521.com/2019-12-19-ti-huan-kong-ge/"/>
     <id>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</id>
@@ -364,9 +364,9 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
-      <category term="双指针" scheme="http://xxoo521.com/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
-    
       <category term="字符串" scheme="http://xxoo521.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+      <category term="双指针" scheme="http://xxoo521.com/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
     
   </entry>
   
@@ -451,26 +451,6 @@
   </entry>
   
   <entry>
-    <title>scss：最常见的css预处理器</title>
-    <link href="http://xxoo521.com/2018-05-29-scss-fisrt-step/"/>
-    <id>http://xxoo521.com/2018-05-29-scss-fisrt-step/</id>
-    <published>2018-05-29T00:00:00.000Z</published>
-    <updated>2020-01-02T16:53:32.565Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;Sass&lt;/code&gt; 和 &lt;code&gt;SCSS&lt;/code&gt; 其实是同一种东西，我们平时都称之为 &lt;code&gt;Sass&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;他们都是用&lt;code&gt;Ruby&lt;/code&gt;开发 Css 预处理器，&lt;code&gt;boostrap4&lt;/code&gt;已经将&lt;code&gt;less&lt;/code&gt;换成了&lt;code&gt;scss&lt;/code&gt;。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="css系列" scheme="http://xxoo521.com/categories/css%E7%B3%BB%E5%88%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>scss实现样式复用: 继承、占位符、混合宏</title>
     <link href="http://xxoo521.com/2018-05-29-scss-more/"/>
     <id>http://xxoo521.com/2018-05-29-scss-more/</id>
@@ -481,6 +461,26 @@
     
       &lt;p&gt;如何让 scss 代码可复用？三种复用方式分别用在何处？下方是一段自定义大小的样例 👇&lt;/p&gt;
 &lt;figure class=&quot;highlight scss hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-variable&quot;&gt;$height&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;15px&lt;/span&gt; !default;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-variable&quot;&gt;$width&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;18px&lt;/span&gt; !default;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;@mixin&lt;/span&gt; size(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;...) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;@if&lt;/span&gt; length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$height&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$width&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; if length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; if length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: nth(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: nth(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-keyword&quot;&gt;@debug&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;Too many parameters&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="css系列" scheme="http://xxoo521.com/categories/css%E7%B3%BB%E5%88%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>scss：最常见的css预处理器</title>
+    <link href="http://xxoo521.com/2018-05-29-scss-fisrt-step/"/>
+    <id>http://xxoo521.com/2018-05-29-scss-fisrt-step/</id>
+    <published>2018-05-29T00:00:00.000Z</published>
+    <updated>2020-01-02T16:53:32.565Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;Sass&lt;/code&gt; 和 &lt;code&gt;SCSS&lt;/code&gt; 其实是同一种东西，我们平时都称之为 &lt;code&gt;Sass&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;他们都是用&lt;code&gt;Ruby&lt;/code&gt;开发 Css 预处理器，&lt;code&gt;boostrap4&lt;/code&gt;已经将&lt;code&gt;less&lt;/code&gt;换成了&lt;code&gt;scss&lt;/code&gt;。&lt;/p&gt;
     
     </summary>
     
