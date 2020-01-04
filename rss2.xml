@@ -15,22 +15,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Tue, 31 Dec 2019 14:19:45 GMT</pubDate>
+    <pubDate>Sat, 04 Jan 2020 08:34:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>剑指offer - 二进制中1的个数 - JavaScript</title>
-      <link>http://xxoo521.com/2019-12-31-number-of-one/</link>
-      <guid>http://xxoo521.com/2019-12-31-number-of-one/</guid>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
+      <title>剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript</title>
+      <link>http://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/</link>
+      <guid>http://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/</guid>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;: 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。&lt;/p&gt;
       
       </description>
       
       
-      <comments>http://xxoo521.com/2019-12-31-number-of-one/#disqus_thread</comments>
+      <comments>http://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/#disqus_thread</comments>
     </item>
     
     <item>
@@ -47,6 +47,21 @@
       
       
       <comments>http://xxoo521.com/2019-12-31-pow/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>剑指offer - 二进制中1的个数 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-31-number-of-one/</link>
+      <guid>http://xxoo521.com/2019-12-31-number-of-one/</guid>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-31-number-of-one/#disqus_thread</comments>
     </item>
     
     <item>
@@ -204,21 +219,6 @@
     </item>
     
     <item>
-      <title>剑指offer - 替换空格 - JavaScript</title>
-      <link>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</link>
-      <guid>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</guid>
-      <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;: 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为 We Are Happy.则经过替换之后的字符串为 We%20Are%20Happy。&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>🔝2020，让我们从头来过</title>
       <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
       <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
@@ -238,6 +238,21 @@
     </item>
     
     <item>
+      <title>剑指offer - 替换空格 - JavaScript</title>
+      <link>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</link>
+      <guid>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/</guid>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;: 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为 We Are Happy.则经过替换之后的字符串为 We%20Are%20Happy。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-19-ti-huan-kong-ge/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>如何保持保持高效学习？</title>
       <link>http://xxoo521.com/2019-11-25-how-insist-on-learning/</link>
       <guid>http://xxoo521.com/2019-11-25-how-insist-on-learning/</guid>
@@ -253,6 +268,133 @@
       
       
       <comments>http://xxoo521.com/2019-11-25-how-insist-on-learning/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Flex快速上手</title>
+      <link>http://xxoo521.com/2019-03-20-css3-flex/</link>
+      <guid>http://xxoo521.com/2019-03-20-css3-flex/</guid>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;code&gt;Flex&lt;/code&gt;之于 CSS3 就如&lt;code&gt;Promise&lt;/code&gt;之于 ES6，都解决了开发者的痛点问题，大大提高了生产力。借助&lt;code&gt;Flex&lt;/code&gt;，可以轻松实现&lt;strong&gt;栅栏布局&lt;/strong&gt;、&lt;strong&gt;水平/垂直居中&lt;/strong&gt;、&lt;strong&gt;自定义排列方向和顺序&lt;/strong&gt;等等需求。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-03-20-css3-flex/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>你了解css3的nth-child吗</title>
+      <link>http://xxoo521.com/2019-03-19-css3-nth-child/</link>
+      <guid>http://xxoo521.com/2019-03-19-css3-nth-child/</guid>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;code&gt;:nth-child(n)&lt;/code&gt; 选择器匹配属于其父元素的第 n 个子元素，借助这个特性，可以实现选择第偶数次序的子元素、选择一定范围内的子元素等“&lt;strong&gt;批量选择操作&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;而它比较难理解的地方是参数表达式中&lt;code&gt;n&lt;/code&gt;的含义，以及如何进行数学运算，这也是面试中考察的难点。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-03-19-css3-nth-child/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>CSS3盒模型：border-box</title>
+      <link>http://xxoo521.com/2018-06-05-border-sizing/</link>
+      <guid>http://xxoo521.com/2018-06-05-border-sizing/</guid>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;code&gt;box-sizing&lt;/code&gt;可以声明计算元素高宽的 CSS 盒模型。它有&lt;code&gt;content-box&lt;/code&gt;、&lt;code&gt;border-box&lt;/code&gt;和&lt;code&gt;inherit&lt;/code&gt;三种取值。其中&lt;code&gt;border-box&lt;/code&gt;是 css3 新增，也是主流 UI 框架的全局默认属性。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2018-06-05-border-sizing/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>scss：最常见的css预处理器</title>
+      <link>http://xxoo521.com/2018-05-29-scss-fisrt-step/</link>
+      <guid>http://xxoo521.com/2018-05-29-scss-fisrt-step/</guid>
+      <pubDate>Tue, 29 May 2018 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;code&gt;Sass&lt;/code&gt; 和 &lt;code&gt;SCSS&lt;/code&gt; 其实是同一种东西，我们平时都称之为 &lt;code&gt;Sass&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;他们都是用&lt;code&gt;Ruby&lt;/code&gt;开发 Css 预处理器，&lt;code&gt;boostrap4&lt;/code&gt;已经将&lt;code&gt;less&lt;/code&gt;换成了&lt;code&gt;scss&lt;/code&gt;。&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2018-05-29-scss-fisrt-step/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>scss实现样式复用: 继承、占位符、混合宏</title>
+      <link>http://xxoo521.com/2018-05-29-scss-more/</link>
+      <guid>http://xxoo521.com/2018-05-29-scss-more/</guid>
+      <pubDate>Tue, 29 May 2018 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;如何让 scss 代码可复用？三种复用方式分别用在何处？下方是一段自定义大小的样例 👇&lt;/p&gt;
+&lt;figure class=&quot;highlight scss hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-variable&quot;&gt;$height&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;15px&lt;/span&gt; !default;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-variable&quot;&gt;$width&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;18px&lt;/span&gt; !default;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;@mixin&lt;/span&gt; size(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;...) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;@if&lt;/span&gt; length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$height&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$width&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; if length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; if length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: nth(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: nth(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-keyword&quot;&gt;@debug&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;Too many parameters&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2018-05-29-scss-more/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>算法系列汇总</title>
+      <link>http://xxoo521.com/algorithm/</link>
+      <guid>http://xxoo521.com/algorithm/</guid>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;h2 id=&quot;《剑指-Offer》-JavaScript-版讲解&quot;&gt;&lt;a href=&quot;#《剑指-Offer》-JavaScript-版讲解&quot; class=&quot;headerlink&quot; title=&quot;《剑指 Offer》 JavaScript 版讲解&quot;&gt;&lt;/a&gt;《剑指 Offer》 JavaScript 版讲解&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a
+          
+        
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/algorithm/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>前端系列汇总</title>
+      <link>http://xxoo521.com/frontend/</link>
+      <guid>http://xxoo521.com/frontend/</guid>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;h2 id=&quot;CSS-精选&quot;&gt;&lt;a href=&quot;#CSS-精选&quot; class=&quot;headerlink&quot; title=&quot;CSS 精选&quot;&gt;&lt;/a&gt;CSS 精选&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://xxoo521.com/2018-06-05-border-sizing/&quot;&gt;CSS3 盒模型：border-box&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+          
+        
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/frontend/#disqus_thread</comments>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xxoo521.com/"/>
-  <updated>2019-12-31T14:19:45.403Z</updated>
+  <updated>2020-01-04T08:34:57.289Z</updated>
   <id>http://xxoo521.com/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>剑指offer - 二进制中1的个数 - JavaScript</title>
-    <link href="http://xxoo521.com/2019-12-31-number-of-one/"/>
-    <id>http://xxoo521.com/2019-12-31-number-of-one/</id>
-    <published>2019-12-31T00:00:00.000Z</published>
-    <updated>2019-12-31T14:19:45.403Z</updated>
+    <title>剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript</title>
+    <link href="http://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/"/>
+    <id>http://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/</id>
+    <published>2020-01-01T00:00:00.000Z</published>
+    <updated>2020-01-04T08:34:57.289Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;: 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。&lt;/p&gt;
     
     </summary>
     
@@ -33,7 +33,11 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
-      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+      <category term="数组" scheme="http://xxoo521.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="双指针" scheme="http://xxoo521.com/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+      <category term="排序" scheme="http://xxoo521.com/tags/%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
@@ -55,13 +59,34 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
+      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
+    
       <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
       <category term="数学" scheme="http://xxoo521.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
     
-      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
+  </entry>
+  
+  <entry>
+    <title>剑指offer - 二进制中1的个数 - JavaScript</title>
+    <link href="http://xxoo521.com/2019-12-31-number-of-one/"/>
+    <id>http://xxoo521.com/2019-12-31-number-of-one/</id>
+    <published>2019-12-31T00:00:00.000Z</published>
+    <updated>2019-12-31T14:19:45.403Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;题目描述&lt;/strong&gt;：输入一个整数，输出该数二进制表示中 1 的个数。其中负数用补码表示。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
+    
+    
+      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
   </entry>
   
@@ -180,9 +205,9 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
-      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
-    
       <category term="数组" scheme="http://xxoo521.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
     
   </entry>
   
@@ -250,9 +275,9 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
-      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
-    
       <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
+    
+      <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
     
   </entry>
   
@@ -293,9 +318,32 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
+      <category term="数组" scheme="http://xxoo521.com/tags/%E6%95%B0%E7%BB%84/"/>
+    
       <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
     
-      <category term="数组" scheme="http://xxoo521.com/tags/%E6%95%B0%E7%BB%84/"/>
+  </entry>
+  
+  <entry>
+    <title>🔝2020，让我们从头来过</title>
+    <link href="http://xxoo521.com/2019-12-19-let-us-restart/"/>
+    <id>http://xxoo521.com/2019-12-19-let-us-restart/</id>
+    <published>2019-12-19T00:00:00.000Z</published>
+    <updated>2020-01-03T06:25:58.476Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
+&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="想法" scheme="http://xxoo521.com/categories/%E6%83%B3%E6%B3%95/"/>
+    
     
   </entry>
   
@@ -316,32 +364,9 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
-      <category term="字符串" scheme="http://xxoo521.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
       <category term="双指针" scheme="http://xxoo521.com/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
     
-  </entry>
-  
-  <entry>
-    <title>🔝2020，让我们从头来过</title>
-    <link href="http://xxoo521.com/2019-12-19-let-us-restart/"/>
-    <id>http://xxoo521.com/2019-12-19-let-us-restart/</id>
-    <published>2019-12-19T00:00:00.000Z</published>
-    <updated>2019-12-19T06:52:23.131Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
-&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="想法" scheme="http://xxoo521.com/categories/%E6%83%B3%E6%B3%95/"/>
-    
+      <category term="字符串" scheme="http://xxoo521.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
   </entry>
   
@@ -363,6 +388,157 @@
     
     
       <category term="想法" scheme="http://xxoo521.com/categories/%E6%83%B3%E6%B3%95/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Flex快速上手</title>
+    <link href="http://xxoo521.com/2019-03-20-css3-flex/"/>
+    <id>http://xxoo521.com/2019-03-20-css3-flex/</id>
+    <published>2019-03-20T00:00:00.000Z</published>
+    <updated>2020-01-02T15:14:42.145Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;Flex&lt;/code&gt;之于 CSS3 就如&lt;code&gt;Promise&lt;/code&gt;之于 ES6，都解决了开发者的痛点问题，大大提高了生产力。借助&lt;code&gt;Flex&lt;/code&gt;，可以轻松实现&lt;strong&gt;栅栏布局&lt;/strong&gt;、&lt;strong&gt;水平/垂直居中&lt;/strong&gt;、&lt;strong&gt;自定义排列方向和顺序&lt;/strong&gt;等等需求。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="css系列" scheme="http://xxoo521.com/categories/css%E7%B3%BB%E5%88%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>你了解css3的nth-child吗</title>
+    <link href="http://xxoo521.com/2019-03-19-css3-nth-child/"/>
+    <id>http://xxoo521.com/2019-03-19-css3-nth-child/</id>
+    <published>2019-03-19T00:00:00.000Z</published>
+    <updated>2020-01-02T15:26:05.180Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;:nth-child(n)&lt;/code&gt; 选择器匹配属于其父元素的第 n 个子元素，借助这个特性，可以实现选择第偶数次序的子元素、选择一定范围内的子元素等“&lt;strong&gt;批量选择操作&lt;/strong&gt;”。&lt;/p&gt;
+&lt;p&gt;而它比较难理解的地方是参数表达式中&lt;code&gt;n&lt;/code&gt;的含义，以及如何进行数学运算，这也是面试中考察的难点。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="css系列" scheme="http://xxoo521.com/categories/css%E7%B3%BB%E5%88%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS3盒模型：border-box</title>
+    <link href="http://xxoo521.com/2018-06-05-border-sizing/"/>
+    <id>http://xxoo521.com/2018-06-05-border-sizing/</id>
+    <published>2018-06-05T00:00:00.000Z</published>
+    <updated>2020-01-02T15:17:07.602Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;box-sizing&lt;/code&gt;可以声明计算元素高宽的 CSS 盒模型。它有&lt;code&gt;content-box&lt;/code&gt;、&lt;code&gt;border-box&lt;/code&gt;和&lt;code&gt;inherit&lt;/code&gt;三种取值。其中&lt;code&gt;border-box&lt;/code&gt;是 css3 新增，也是主流 UI 框架的全局默认属性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="css系列" scheme="http://xxoo521.com/categories/css%E7%B3%BB%E5%88%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>scss：最常见的css预处理器</title>
+    <link href="http://xxoo521.com/2018-05-29-scss-fisrt-step/"/>
+    <id>http://xxoo521.com/2018-05-29-scss-fisrt-step/</id>
+    <published>2018-05-29T00:00:00.000Z</published>
+    <updated>2020-01-02T16:53:32.565Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;Sass&lt;/code&gt; 和 &lt;code&gt;SCSS&lt;/code&gt; 其实是同一种东西，我们平时都称之为 &lt;code&gt;Sass&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;他们都是用&lt;code&gt;Ruby&lt;/code&gt;开发 Css 预处理器，&lt;code&gt;boostrap4&lt;/code&gt;已经将&lt;code&gt;less&lt;/code&gt;换成了&lt;code&gt;scss&lt;/code&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="css系列" scheme="http://xxoo521.com/categories/css%E7%B3%BB%E5%88%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>scss实现样式复用: 继承、占位符、混合宏</title>
+    <link href="http://xxoo521.com/2018-05-29-scss-more/"/>
+    <id>http://xxoo521.com/2018-05-29-scss-more/</id>
+    <published>2018-05-29T00:00:00.000Z</published>
+    <updated>2020-01-02T16:53:52.312Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如何让 scss 代码可复用？三种复用方式分别用在何处？下方是一段自定义大小的样例 👇&lt;/p&gt;
+&lt;figure class=&quot;highlight scss hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-variable&quot;&gt;$height&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;15px&lt;/span&gt; !default;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-variable&quot;&gt;$width&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;18px&lt;/span&gt; !default;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;@mixin&lt;/span&gt; size(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;...) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;@if&lt;/span&gt; length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$height&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$width&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; if length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: &lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; if length(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;) == &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;height&lt;/span&gt;: nth(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-attribute&quot;&gt;width&lt;/span&gt;: nth(&lt;span class=&quot;hljs-variable&quot;&gt;$list&lt;/span&gt;, &lt;span class=&quot;hljs-number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125; &lt;span class=&quot;hljs-keyword&quot;&gt;@else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;hljs-keyword&quot;&gt;@debug&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;Too many parameters&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="css系列" scheme="http://xxoo521.com/categories/css%E7%B3%BB%E5%88%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>算法系列汇总</title>
+    <link href="http://xxoo521.com/algorithm/"/>
+    <id>http://xxoo521.com/algorithm/</id>
+    <published>2018-01-01T00:00:00.000Z</published>
+    <updated>2020-01-04T09:07:05.112Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;h2 id=&quot;《剑指-Offer》-JavaScript-版讲解&quot;&gt;&lt;a href=&quot;#《剑指-Offer》-JavaScript-版讲解&quot; class=&quot;headerlink&quot; title=&quot;《剑指 Offer》 JavaScript 版讲解&quot;&gt;&lt;/a&gt;《剑指 Offer》 JavaScript 版讲解&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端系列汇总</title>
+    <link href="http://xxoo521.com/frontend/"/>
+    <id>http://xxoo521.com/frontend/</id>
+    <published>2018-01-01T00:00:00.000Z</published>
+    <updated>2020-01-04T08:59:17.034Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;h2 id=&quot;CSS-精选&quot;&gt;&lt;a href=&quot;#CSS-精选&quot; class=&quot;headerlink&quot; title=&quot;CSS 精选&quot;&gt;&lt;/a&gt;CSS 精选&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://xxoo521.com/2018-06-05-border-sizing/&quot;&gt;CSS3 盒模型：border-box&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
     
     
   </entry>

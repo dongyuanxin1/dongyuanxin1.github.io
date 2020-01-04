@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.1.1" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>心谭博客 - 前端算法</title>
+
+
+    <meta name="description" content="专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题">
+<meta property="og:type" content="website">
+<meta property="og:title" content="心谭博客 - 前端算法">
+<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;page&#x2F;3&#x2F;index.html">
+<meta property="og:site_name" content="心谭博客 - 前端算法">
+<meta property="og:description" content="专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
+<meta property="article:author" content="心谭">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154727758-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154727758-1');
+</script>
+
+    
+    
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?04411a6ce37291d3f59e4a44491263bd";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="alternate" href="/atom.xml" title="心谭博客 - 前端算法" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="心谭博客 - 前端算法" type="application/rss+xml">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="心谭博客 - 前端算法" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">回到首页</a>
+                
+                <a class="navbar-item"
+                href="/2019-12-20-contact/">加群交流</a>
+                
+                <a class="navbar-item"
+                href="/archives">历史归档</a>
+                
+                <a class="navbar-item"
+                href="/categories">所有分类</a>
+                
+                <a class="navbar-item"
+                href="/tags">所有标签</a>
+                
+                <a class="navbar-item"
+                href="https://xin-tan.com/">前端图谱</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/dongyuanxin/">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-29T00:00:00.000Z">2018-05-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/css%E7%B3%BB%E5%88%97/">css系列</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 分钟 读完 (大约 887 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018-05-29-scss-more/">scss实现样式复用: 继承、占位符、混合宏</a>
+            
+        </h1>
+        <div class="content">
+            <p>如何让 scss 代码可复用？三种复用方式分别用在何处？下方是一段自定义大小的样例 👇</p>
+<figure class="highlight scss hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-variable">$height</span>: <span class="hljs-number">15px</span> !default;</span><br><span class="line"><span class="hljs-variable">$width</span>: <span class="hljs-number">18px</span> !default;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">@mixin</span> size(<span class="hljs-variable">$list</span>...) &#123;</span><br><span class="line">    <span class="hljs-keyword">@if</span> length(<span class="hljs-variable">$list</span>) == <span class="hljs-number">0</span> &#123;</span><br><span class="line">        <span class="hljs-attribute">height</span>: <span class="hljs-variable">$height</span>;</span><br><span class="line">        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$width</span>;</span><br><span class="line">    &#125; <span class="hljs-keyword">@else</span> if length(<span class="hljs-variable">$list</span>) == <span class="hljs-number">1</span> &#123;</span><br><span class="line">        <span class="hljs-attribute">height</span>: <span class="hljs-variable">$list</span>;</span><br><span class="line">        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$list</span>;</span><br><span class="line">    &#125; <span class="hljs-keyword">@else</span> if length(<span class="hljs-variable">$list</span>) == <span class="hljs-number">2</span> &#123;</span><br><span class="line">        <span class="hljs-attribute">height</span>: nth(<span class="hljs-variable">$list</span>, <span class="hljs-number">1</span>);</span><br><span class="line">        <span class="hljs-attribute">width</span>: nth(<span class="hljs-variable">$list</span>, <span class="hljs-number">2</span>);</span><br><span class="line">    &#125; <span class="hljs-keyword">@else</span> &#123;</span><br><span class="line">        <span class="hljs-keyword">@debug</span> <span class="hljs-string">"Too many parameters"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            
+            
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2018-05-29-scss-more/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-01T00:00:00.000Z">2018-01-01</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 分钟 读完 (大约 198 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/algorithm/">算法系列汇总</a>
+            
+        </h1>
+        <div class="content">
+            <a id="more"></a>
+
+<h2 id="《剑指-Offer》-JavaScript-版讲解"><a href="#《剑指-Offer》-JavaScript-版讲解" class="headerlink" title="《剑指 Offer》 JavaScript 版讲解"></a>《剑指 Offer》 JavaScript 版讲解</h2><ul>
+<li><a href="https://xxoo521.com/2019-12-19-er-wei-shu-zu-cha-zhao/">二维数组中的查找</a></li>
+<li><a href="https://xxoo521.com/2019-12-19-ti-huan-kong-ge/">替换空格</a></li>
+<li><a href="https://xxoo521.com/2019-12-21-da-yin-lian-biao/">从尾到头打印链表</a></li>
+<li><a href="https://xxoo521.com/2019-12-21-re-construct-btree/">重建二叉树</a></li>
+<li><a href="https://xxoo521.com/2019-12-23-zhan-shi-xian-dui-lie/">用两个栈(队列)实现队列(栈)</a></li>
+<li><a href="https://xxoo521.com/2019-12-24-xuan-zhuan-shu-zu/">旋转数组的最小数字</a></li>
+<li><a href="https://xxoo521.com/2019-12-25-fei-bo-na-qi/">斐波那契数列</a></li>
+<li><a href="https://xxoo521.com/2019-12-26-qing-wa-tiao-tai-jie/">青蛙跳台阶</a></li>
+<li><a href="https://xxoo521.com/2019-12-27-bian-tai-tiao-tai-jie/">变态跳台阶</a></li>
+<li><a href="https://xxoo521.com/2019-12-30-ju-zhen-fu-gai/">矩阵覆盖</a></li>
+<li><a href="https://xxoo521.com/2019-12-31-number-of-one/">二进制中 1 的个数</a></li>
+<li><a href="https://xxoo521.com/2019-12-31-pow/">数值的整次方(四种解法)</a></li>
+<li><a href="https://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/">调整数组顺序使奇数位于偶数前面</a></li>
+</ul>
+
+            
+            
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-01T00:00:00.000Z">2018-01-01</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    几秒 读完 (大约 79 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/frontend/">前端系列汇总</a>
+            
+        </h1>
+        <div class="content">
+            <a id="more"></a>
+
+<h2 id="CSS-精选"><a href="#CSS-精选" class="headerlink" title="CSS 精选"></a>CSS 精选</h2><ul>
+<li><a href="https://xxoo521.com/2018-06-05-border-sizing/">CSS3 盒模型：border-box</a></li>
+<li><a href="https://xxoo521.com/2019-03-20-css3-flex/">Flex 快速上手</a></li>
+<li><a href="https://xxoo521.com/2019-03-19-css3-nth-child/">你了解 css3 的 nth-child 吗</a></li>
+<li><a href="https://xxoo521.com/2018-05-29-scss-fisrt-step/">scss：最常见的 css 预处理器</a></li>
+<li><a href="https://xxoo521.com/2018-05-29-scss-more/">scss 实现样式复用: 继承、占位符、混合宏</a></li>
+</ul>
+
+            
+            
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    
+<div class="card card-transparent">
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/page/2/">上一页</a>
+        </div>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/page/4/">下一页</a>
+        </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link is-current" href="/page/3/">3</a></li>
+            
+        </ul>
+    </nav>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    
+                    <figure class="image is-128x128 has-mb-6" style="width: 200px; height: 200px;">
+                        <img class="" src="/images/wechat-8cm.jpg" alt="心谭博客">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        心谭博客
+                    </p>
+                    
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            23
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            3
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            13
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="/images/wechat-bar.png" target="_blank">
+                扫码关注 · 支持一下</a>
+        </div>
+        
+        
+        
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/frontend/" style="color: hsl(217, 71%, 53%); font-weight: 500;">
+            <span class="level-start">
+                <span class="level-item">前端系列汇总</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="color: white; background: hsl(217, 71%, 53%);">
+                    必看
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/algorithm/" style="color: hsl(217, 71%, 53%); font-weight: 500;">
+            <span class="level-start">
+                <span class="level-item">算法系列汇总</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="color: white; background: hsl(217, 71%, 53%);">
+                    必看
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/css%E7%B3%BB%E5%88%97/" style="false">
+            <span class="level-start">
+                <span class="level-item">css系列</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="false">
+                    5
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%89%91%E6%8C%87offer/" style="false">
+            <span class="level-start">
+                <span class="level-item">剑指offer</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="false">
+                    13
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E6%83%B3%E6%B3%95/" style="false">
+            <span class="level-start">
+                <span class="level-item">想法</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="false">
+                    3
+                </span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/">
+                        <span class="tag">位运算</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="tag">动态规划</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
+                        <span class="tag">双指针</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
+                        <span class="tag">字符串</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%8E%92%E5%BA%8F/">
+                        <span class="tag">排序</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%95%B0%E5%AD%A6/">
+                        <span class="tag">数学</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%95%B0%E7%BB%84/">
+                        <span class="tag">数组</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%9F%A5%E6%89%BE/">
+                        <span class="tag">查找</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%A0%88/">
+                        <span class="tag">栈</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%A0%91/">
+                        <span class="tag">树</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%80%92%E5%BD%92/">
+                        <span class="tag">递归</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%93%BE%E8%A1%A8/">
+                        <span class="tag">链表</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%98%9F%E5%88%97/">
+                        <span class="tag">队列</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
+        
+            
+        
+            <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020-01-01-tiao-zheng-shu-zu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-01T00:00:00.000Z">2020-01-01</time></div>
+                    <a href="/2020-01-01-tiao-zheng-shu-zu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-pow/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-number-of-one/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 二进制中1的个数 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-number-of-one/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 二进制中1的个数 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-30-ju-zhen-fu-gai/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 矩阵覆盖 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-30T00:00:00.000Z">2019-12-30</time></div>
+                    <a href="/2019-12-30-ju-zhen-fu-gai/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 矩阵覆盖 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 变态跳台阶 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-27T00:00:00.000Z">2019-12-27</time></div>
+                    <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 变态跳台阶 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/12/">
+                <span class="level-start">
+                    <span class="level-item">十二月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">14</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
+    
+        
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020-01-01-tiao-zheng-shu-zu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-01T00:00:00.000Z">2020-01-01</time></div>
+                    <a href="/2020-01-01-tiao-zheng-shu-zu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-pow/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-number-of-one/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 二进制中1的个数 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-number-of-one/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 二进制中1的个数 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-30-ju-zhen-fu-gai/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 矩阵覆盖 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-30T00:00:00.000Z">2019-12-30</time></div>
+                    <a href="/2019-12-30-ju-zhen-fu-gai/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 矩阵覆盖 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 变态跳台阶 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-27T00:00:00.000Z">2019-12-27</time></div>
+                    <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 变态跳台阶 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/12/">
+                <span class="level-start">
+                    <span class="level-item">十二月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">14</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <p class="is-size-7">
+                &copy; 2020 心谭&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                共<span id="busuanzi_value_site_uv">0</span>个访客,
+                <span id="busuanzi_value_site_pv">0</span>次访问
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="知乎" href="https://www.zhihu.com/people/godbmw/activities">
+                        
+                        知乎
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="掘金" href="https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5">
+                        
+                        掘金
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="简书" href="https://www.jianshu.com/u/d1570f4a618a">
+                        
+                        简书
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="Segmentfault" href="https://segmentfault.com/u/godbmw">
+                        
+                        Segmentfault
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="CSDN" href="https://mp.csdn.net/">
+                        
+                        CSDN
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/dongyuanxin/">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script>
+
+
+
+    
+    
+<script src="/js/animation.js"></script>
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+    
+    
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+    
+    
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>

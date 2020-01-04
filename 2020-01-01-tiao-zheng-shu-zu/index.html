@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.1.1" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript - 心谭博客 - 前端算法</title>
+
+
+    <meta name="description" content="题目描述: 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript">
+<meta property="og:url" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;2020-01-01-tiao-zheng-shu-zu&#x2F;index.html">
+<meta property="og:site_name" content="心谭博客 - 前端算法">
+<meta property="og:description" content="题目描述: 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
+<meta property="article:published_time" content="2020-01-01T00:00:00.000Z">
+<meta property="article:modified_time" content="2020-01-04T08:34:57.289Z">
+<meta property="article:author" content="心谭">
+<meta property="article:tag" content="数组">
+<meta property="article:tag" content="双指针">
+<meta property="article:tag" content="排序">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;xxoo521.com&#x2F;images&#x2F;og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154727758-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154727758-1');
+</script>
+
+    
+    
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?04411a6ce37291d3f59e4a44491263bd";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="alternate" href="/atom.xml" title="心谭博客 - 前端算法" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="心谭博客 - 前端算法" type="application/rss+xml">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">回到首页</a>
+                
+                <a class="navbar-item"
+                href="/2019-12-20-contact/">加群交流</a>
+                
+                <a class="navbar-item"
+                href="/archives">历史归档</a>
+                
+                <a class="navbar-item"
+                href="/categories">所有分类</a>
+                
+                <a class="navbar-item"
+                href="/tags">所有标签</a>
+                
+                <a class="navbar-item"
+                href="https://xin-tan.com/">前端图谱</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/dongyuanxin/">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-01-01T00:00:00.000Z">2020-01-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 分钟 读完 (大约 992 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript
+            
+        </h1>
+        <div class="content">
+            <p><strong>题目描述</strong>: 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p>
+<a id="more"></a>
+
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p>
+<h2 id="解法-1-开辟新空间-时间更优"><a href="#解法-1-开辟新空间-时间更优" class="headerlink" title="解法 1:开辟新空间(时间更优)"></a>解法 1:开辟新空间(时间更优)</h2><p>此过程需要循环 2 次，时间复杂度 O(N), 空间复杂度 O(N)。过程如下：</p>
+<ul>
+<li>第一次循环依次找到偶数和奇数，并且将其分别存放到新开辟的空间中</li>
+<li>第二次循环将存放偶数和奇数的空间“连接”在一起</li>
+</ul>
+<p>代码如下：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593</span></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number[]&#125;</span> <span class="hljs-variable">array</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reOrderArray</span>(<span class="hljs-params">array</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> arr = []; <span class="hljs-comment">// 奇数数组</span></span><br><span class="line">    <span class="hljs-keyword">const</span> brr = []; <span class="hljs-comment">// 偶数数组</span></span><br><span class="line">    array.forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> &#123;</span><br><span class="line">        item % <span class="hljs-number">2</span> ? arr.push(item) : brr.push(item);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> arr.concat(brr);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="解法-2-插入排序思路-空间更优"><a href="#解法-2-插入排序思路-空间更优" class="headerlink" title="解法 2: 插入排序思路(空间更优)"></a>解法 2: 插入排序思路(空间更优)</h2><p>这种思路和插入排序相似，时间复杂度 O(N^2)，空间复杂度 O(1)，不推荐。</p>
+<p>这里时间复杂度主要浪费在“保持偶数和奇数原相对位置不变”这个要求上。</p>
+<p>整体的思路：</p>
+<ul>
+<li>指针 i 从 0 开始向右移动，如果遇到奇数，继续移动；遇到偶数，停下来，并进入循环<ul>
+<li>设置新指针 j = i + 1，指针 j 向右移动，遇到偶数，继续移动；遇到奇数，停下来，并进入下一步</li>
+<li>将数组<code>[i, j - 1]</code> 的元素整体向右位移 1 位，然后将 j 上的元素赋给 i 上的元素</li>
+</ul>
+</li>
+<li>检测是否遍历完成，未完成则回到第一步</li>
+</ul>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593</span></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number[]&#125;</span> <span class="hljs-variable">array</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reOrderArray</span>(<span class="hljs-params">array</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> length = array.length;</span><br><span class="line">    <span class="hljs-keyword">if</span> (!length) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> [];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (i &lt; length) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (array[i] % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) &#123;</span><br><span class="line">            <span class="hljs-comment">// 如果指针i对应的元素是偶数</span></span><br><span class="line">            <span class="hljs-comment">// 那么就需要找到其后出现的第一个奇数</span></span><br><span class="line">            <span class="hljs-comment">// 然后和指针i的元素进行交换</span></span><br><span class="line">            <span class="hljs-keyword">let</span> j = i + <span class="hljs-number">1</span>;</span><br><span class="line">            <span class="hljs-keyword">for</span> (; j &lt; length &amp;&amp; array[j] % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>; ++j) &#123;&#125;</span><br><span class="line">            <span class="hljs-keyword">if</span> (j === length) &#123;</span><br><span class="line">                <span class="hljs-keyword">break</span>;</span><br><span class="line">            &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">                <span class="hljs-comment">// 整体右移，保证原元素的相对位置不变</span></span><br><span class="line">                <span class="hljs-keyword">const</span> tmp = array[j];</span><br><span class="line">                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> k = j; k &gt; i; k--) &#123;</span><br><span class="line">                    array[k] = array[k - <span class="hljs-number">1</span>];</span><br><span class="line">                &#125;</span><br><span class="line">                array[i] = tmp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> array;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="拓展思考"><a href="#拓展思考" class="headerlink" title="拓展思考"></a>拓展思考</h2><blockquote>
+<p>专注前端与算法的系列干货分享，欢迎关注(¬‿¬)：<br>「微信公众号：<strong>心谭博客</strong>」| <a href="https://xxoo521.com/">xxoo521.com</a> | <a href="https://github.com/dongyuanxin/blog" target="_blank" rel="noopener">GitHub</a></p>
+</blockquote>
+<p>如果题目中的要求，去掉“保证奇数和奇数，偶数和偶数之间的相对位置不变”这个条件，那么做法是什么呢？</p>
+<p>可以利用“双指针”，分别是指向数组头部的指针 i，与指向数组尾部的指针 j。过程如下：</p>
+<ul>
+<li>i 向右移动，直到遇到偶数；j 向左移动，直到遇到奇数</li>
+<li>检查 i 是否小于 j，若小于，交换 i 和 j 的元素，回到上一步骤继续移动；否则结束循环</li>
+</ul>
+<p>时间复杂度是 O(N),空间复杂度是 O(1)。代码如下：</p>
+<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 原文地址：https://xxoo521.com/2020-01-01-tiao-zheng-shu-zu/</span></span><br><span class="line"><span class="hljs-comment">// ac地址：扩展思考</span></span><br><span class="line"><span class="hljs-comment">/**</span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@param <span class="hljs-type">&#123;number[]&#125;</span> <span class="hljs-variable">array</span></span></span></span><br><span class="line"><span class="hljs-comment"> * <span class="hljs-doctag">@return <span class="hljs-type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="hljs-comment"> */</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reOrderArray</span>(<span class="hljs-params">array</span>) </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">const</span> length = array.length;</span><br><span class="line">    <span class="hljs-keyword">if</span> (!length) &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> [];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>,</span><br><span class="line">        j = length - <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">        <span class="hljs-keyword">while</span> (i &lt; length &amp;&amp; array[i] % <span class="hljs-number">2</span>) i++;</span><br><span class="line">        <span class="hljs-keyword">while</span> (j &gt;= <span class="hljs-number">0</span> &amp;&amp; array[j] % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) j--;</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">if</span> (i &lt; j) &#123;</span><br><span class="line">            [array[i], array[j]] = [array[j], array[i]];</span><br><span class="line">            i++;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-keyword">return</span> array;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+            
+            
+                <div class="buttons is-centered">
+                    <img src="https://tva1.sinaimg.cn/large/006tNbRwly1g9xhhp50jpj31bi0hcju4.jpg" alt="" srcset="">
+                </div>
+                <h3 style="color: #7a7a7a; font-size: 0.75em;" class="menu-label has-text-centered">扫码关注「心谭博客」, 专注前端与算法</h3>
+                <h3 style="color: #7a7a7a; font-size: 0.75em;" class="menu-label has-text-centered">目前已有前端面试、剑指Offer·JS、动画设计、Webpack等系列专题</h3>
+            
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" rel="tag">双指针</a>, <a class="has-link-grey -link" href="/tags/%E6%8E%92%E5%BA%8F/" rel="tag">排序</a>, <a class="has-link-grey -link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">扫码加入 前端&amp;算法 交流群</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-qq"></i>
+    </span>
+    <span>QQ群</span>
+    <div class="qrcode">
+        <img src="/images/qq-qun.png" alt="QQ群" />
+    </div>
+</a>
+
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信群</span>
+    <div class="qrcode"><img src="/images/wechat-qun.png" alt="微信群"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019-12-31-pow/">
+                <span class="level-item">剑指offer - 数值的整次方(四种解法) - JavaScript</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left is-sticky">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    
+                    <figure class="image is-128x128 has-mb-6" style="width: 200px; height: 200px;">
+                        <img class="" src="/images/wechat-8cm.jpg" alt="心谭博客">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        心谭博客
+                    </p>
+                    
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            23
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            3
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            13
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="/images/wechat-bar.png" target="_blank">
+                扫码关注 · 支持一下</a>
+        </div>
+        
+        
+        
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/frontend/" style="color: hsl(217, 71%, 53%); font-weight: 500;">
+            <span class="level-start">
+                <span class="level-item">前端系列汇总</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="color: white; background: hsl(217, 71%, 53%);">
+                    必看
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/algorithm/" style="color: hsl(217, 71%, 53%); font-weight: 500;">
+            <span class="level-start">
+                <span class="level-item">算法系列汇总</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="color: white; background: hsl(217, 71%, 53%);">
+                    必看
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/css%E7%B3%BB%E5%88%97/" style="false">
+            <span class="level-start">
+                <span class="level-item">css系列</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="false">
+                    5
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E5%89%91%E6%8C%87offer/" style="false">
+            <span class="level-start">
+                <span class="level-item">剑指offer</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="false">
+                    13
+                </span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/%E6%83%B3%E6%B3%95/" style="false">
+            <span class="level-start">
+                <span class="level-item">想法</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag" style="false">
+                    3
+                </span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/">
+                        <span class="tag">位运算</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="tag">动态规划</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
+                        <span class="tag">双指针</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
+                        <span class="tag">字符串</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%8E%92%E5%BA%8F/">
+                        <span class="tag">排序</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%95%B0%E5%AD%A6/">
+                        <span class="tag">数学</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%95%B0%E7%BB%84/">
+                        <span class="tag">数组</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%9F%A5%E6%89%BE/">
+                        <span class="tag">查找</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%A0%88/">
+                        <span class="tag">栈</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E6%A0%91/">
+                        <span class="tag">树</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%80%92%E5%BD%92/">
+                        <span class="tag">递归</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%93%BE%E8%A1%A8/">
+                        <span class="tag">链表</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E9%98%9F%E5%88%97/">
+                        <span class="tag">队列</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
+        
+            
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#题目描述">
+        <span class="has-mr-6">1</span>
+        <span>题目描述</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-1-开辟新空间-时间更优">
+        <span class="has-mr-6">2</span>
+        <span>解法 1:开辟新空间(时间更优)</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-2-插入排序思路-空间更优">
+        <span class="has-mr-6">3</span>
+        <span>解法 2: 插入排序思路(空间更优)</span>
+        </a></li><li>
+        <a class="is-flex" href="#拓展思考">
+        <span class="has-mr-6">4</span>
+        <span>拓展思考</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020-01-01-tiao-zheng-shu-zu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-01T00:00:00.000Z">2020-01-01</time></div>
+                    <a href="/2020-01-01-tiao-zheng-shu-zu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-pow/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-number-of-one/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 二进制中1的个数 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-number-of-one/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 二进制中1的个数 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-30-ju-zhen-fu-gai/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 矩阵覆盖 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-30T00:00:00.000Z">2019-12-30</time></div>
+                    <a href="/2019-12-30-ju-zhen-fu-gai/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 矩阵覆盖 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 变态跳台阶 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-27T00:00:00.000Z">2019-12-27</time></div>
+                    <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 变态跳台阶 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/12/">
+                <span class="level-start">
+                    <span class="level-item">十二月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">14</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
+    
+        
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#题目描述">
+        <span class="has-mr-6">1</span>
+        <span>题目描述</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-1-开辟新空间-时间更优">
+        <span class="has-mr-6">2</span>
+        <span>解法 1:开辟新空间(时间更优)</span>
+        </a></li><li>
+        <a class="is-flex" href="#解法-2-插入排序思路-空间更优">
+        <span class="has-mr-6">3</span>
+        <span>解法 2: 插入排序思路(空间更优)</span>
+        </a></li><li>
+        <a class="is-flex" href="#拓展思考">
+        <span class="has-mr-6">4</span>
+        <span>拓展思考</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020-01-01-tiao-zheng-shu-zu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-01T00:00:00.000Z">2020-01-01</time></div>
+                    <a href="/2020-01-01-tiao-zheng-shu-zu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-pow/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 数值的整次方(四种解法) - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-pow/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 数值的整次方(四种解法) - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-31-number-of-one/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 二进制中1的个数 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-31T00:00:00.000Z">2019-12-31</time></div>
+                    <a href="/2019-12-31-number-of-one/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 二进制中1的个数 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-30-ju-zhen-fu-gai/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 矩阵覆盖 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-30T00:00:00.000Z">2019-12-30</time></div>
+                    <a href="/2019-12-30-ju-zhen-fu-gai/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 矩阵覆盖 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="剑指offer - 变态跳台阶 - JavaScript">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-27T00:00:00.000Z">2019-12-27</time></div>
+                    <a href="/2019-12-27-bian-tai-tiao-tai-jie/" class="title has-link-black-ter is-size-6 has-text-weight-normal">剑指offer - 变态跳台阶 - JavaScript</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%89%91%E6%8C%87offer/">剑指offer</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/12/">
+                <span class="level-start">
+                    <span class="level-item">十二月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">14</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/11/">
+                <span class="level-start">
+                    <span class="level-item">十一月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/06/">
+                <span class="level-start">
+                    <span class="level-item">六月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <p class="is-size-7">
+                &copy; 2020 心谭&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                共<span id="busuanzi_value_site_uv">0</span>个访客,
+                <span id="busuanzi_value_site_pv">0</span>次访问
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="知乎" href="https://www.zhihu.com/people/godbmw/activities">
+                        
+                        知乎
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="掘金" href="https://juejin.im/user/5b91fcf06fb9a05d3c7fd4a5">
+                        
+                        掘金
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="简书" href="https://www.jianshu.com/u/d1570f4a618a">
+                        
+                        简书
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="Segmentfault" href="https://segmentfault.com/u/godbmw">
+                        
+                        Segmentfault
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white " target="_blank" title="CSDN" href="https://mp.csdn.net/">
+                        
+                        CSDN
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/dongyuanxin/">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script>
+
+
+
+    
+    
+<script src="/js/animation.js"></script>
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+    
+    
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank" rel="noopener">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+    
+    
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
