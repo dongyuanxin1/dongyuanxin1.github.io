@@ -15,8 +15,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>专注前端与算法，目前已有前端面试、剑指OFFER·JS、数据结构等系列专题</description>
-    <pubDate>Sat, 04 Jan 2020 08:34:57 GMT</pubDate>
+    <pubDate>Sat, 04 Jan 2020 09:10:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>🔝2020，让我们从头来过</title>
+      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
+      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
+&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>剑指offer - 调整数组顺序使奇数位于偶数前面 - JavaScript</title>
@@ -201,25 +220,6 @@
       
       
       <comments>http://xxoo521.com/2019-12-20-contact/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>🔝2020，让我们从头来过</title>
-      <link>http://xxoo521.com/2019-12-19-let-us-restart/</link>
-      <guid>http://xxoo521.com/2019-12-19-let-us-restart/</guid>
-      <pubDate>Thu, 19 Dec 2019 00:00:00 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;随着前端技术的火速发展，越来越多的新技术映入眼帘。每个人的精力都是有限的，如何在面对新技术的时候能触类旁通、快速学习？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;对于新的技术，扎实的 JS 基础能帮助我们快速上手，而对算法和数据结构的熟悉能加快理解新技术的原理设计&lt;/strong&gt; ……&lt;/p&gt;
-&lt;p&gt;域名 &lt;a href=&quot;https://xxoo521.com/&quot;&gt;xxoo521.com&lt;/a&gt; 只是噱头，最重要的是好记，减少记忆成本。希望能在学习过程中放松一下，博君一笑！&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>http://xxoo521.com/2019-12-19-let-us-restart/#disqus_thread</comments>
     </item>
     
     <item>
