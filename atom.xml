@@ -84,11 +84,11 @@
     
       <category term="查找" scheme="http://xxoo521.com/tags/%E6%9F%A5%E6%89%BE/"/>
     
+      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
+    
       <category term="数学" scheme="http://xxoo521.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="递归" scheme="http://xxoo521.com/tags/%E9%80%92%E5%BD%92/"/>
-    
-      <category term="位运算" scheme="http://xxoo521.com/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/"/>
     
   </entry>
   
@@ -298,9 +298,9 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
-      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
-    
       <category term="链表" scheme="http://xxoo521.com/tags/%E9%93%BE%E8%A1%A8/"/>
+    
+      <category term="栈" scheme="http://xxoo521.com/tags/%E6%A0%88/"/>
     
   </entry>
   
@@ -364,9 +364,9 @@
       <category term="剑指offer" scheme="http://xxoo521.com/categories/%E5%89%91%E6%8C%87offer/"/>
     
     
-      <category term="字符串" scheme="http://xxoo521.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-    
       <category term="双指针" scheme="http://xxoo521.com/tags/%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+    
+      <category term="字符串" scheme="http://xxoo521.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
   </entry>
   
